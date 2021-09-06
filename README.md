@@ -16,4 +16,5 @@ A simple pomodoro timer written in C with **PIC16F84A**
   restTime();
 ```
 ## Schematic and PCB 
-- coming soon...
+![schematic](img/sch.png)
+- PCB comming soon...
