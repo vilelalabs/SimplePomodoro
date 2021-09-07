@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -171,133 +171,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">
-<description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
-This library contains electrically-functional connectors. 
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="PIC_ICSP_MINI_5_PIN" urn="urn:adsk.eagle:footprint:37864/1" library_version="1">
-<description>&lt;h3&gt;Mini ICSP Connector - 5 Pin&lt;/h3&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count:5&lt;/li&gt;
-&lt;li&gt;Pin pitch: 1.5mm&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=”http://www.jst-mfg.com/product/pdf/eng/eZH.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;PIC_ICSP_MINI_5_PIN&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<wire x1="-4" y1="1" x2="-4" y2="-1" width="0.2032" layer="51"/>
-<wire x1="-4" y1="-1" x2="4" y2="-1" width="0.2032" layer="51"/>
-<wire x1="4" y1="-1" x2="4" y2="1" width="0.2032" layer="51"/>
-<wire x1="4" y1="1" x2="-4" y2="1" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="1" x2="-3.6" y2="1" width="0.2032" layer="21"/>
-<wire x1="-3.5944" y1="1" x2="-2.3944" y2="1" width="0.2032" layer="22"/>
-<pad name="1" x="-3" y="0" drill="0.7"/>
-<pad name="2" x="-1.5" y="0" drill="0.7"/>
-<pad name="3" x="0" y="0" drill="0.7"/>
-<pad name="4" x="1.5" y="0" drill="0.7"/>
-<pad name="5" x="3" y="0" drill="0.7"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="PIC_ICSP_MINI_5_PIN" urn="urn:adsk.eagle:package:38219/1" type="box" library_version="1">
-<description>Mini ICSP Connector - 5 Pin
-Specifications:
-Pin count:5
-Pin pitch: 1.5mm
-
-Datasheet referenced for footprint
-Example device(s):
-PIC_ICSP_MINI_5_PIN
-</description>
-<packageinstances>
-<packageinstance name="PIC_ICSP_MINI_5_PIN"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="PIC-ISCP-MINI" urn="urn:adsk.eagle:symbol:37863/1" library_version="1">
-<wire x1="-3.81" y1="7.62" x2="5.08" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="2.54" x2="-2.54" y2="2.54" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="5.08" x2="-2.54" y2="5.08" width="0.6096" layer="94"/>
-<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="-3.81" y1="7.62" x2="-3.81" y2="-7.62" width="0.4064" layer="94"/>
-<wire x1="5.08" y1="-7.62" x2="-3.81" y2="-7.62" width="0.4064" layer="94"/>
-<wire x1="-1.27" y1="-5.08" x2="-2.54" y2="-5.08" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="-2.54" x2="-2.54" y2="-2.54" width="0.6096" layer="94"/>
-<text x="6.096" y="10.414" size="1.778" layer="96" rot="R180">&gt;VALUE</text>
-<text x="5.08" y="-8.382" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<pin name="VPP" x="-7.62" y="5.08" length="middle" direction="pas" swaplevel="1"/>
-<pin name="VCC" x="-7.62" y="2.54" length="middle" direction="pas" swaplevel="1"/>
-<pin name="GND" x="-7.62" y="0" length="middle" direction="pas" swaplevel="1"/>
-<pin name="PGD" x="-7.62" y="-2.54" length="middle" direction="pas" swaplevel="1"/>
-<pin name="PGC" x="-7.62" y="-5.08" length="middle" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PIC_ICSP_MINI_5_PIN" urn="urn:adsk.eagle:component:38352/1" prefix="J" library_version="1">
-<description>&lt;b&gt;PIC-ICSP-Mini&lt;/b&gt;
-Miniature 5-pin connection for temporary programming of PICs. Use this device in your design to save space.
-
-
-&lt;h3&gt;Miniature ISCP Programming connector for PICs&lt;/h3&gt;
-This 5 pin header contains all the lines necessary for programming most PIC microcontrollers. Use this device in your design to save space.
-
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Here is the connector we sell at SparkFun:&lt;/b&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11264"&gt;5-Pin Mini ICSP Connector&lt;/a&gt; (PRT-11264)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;It is used on these SparkFun products:&lt;/b&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/762"&gt;USB Bit Whacker - 18F2553 Development Board&lt;/a&gt; (DEV-00762)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/258"&gt;SparkFun Serial Enabled LCD Backpack&lt;/a&gt; (LCD-00258)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Also, if you need a nice PIC programmer, please check these out:&lt;/b&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9973"&gt;MPLAB PICkit 3&lt;/a&gt; (PGM-09973)&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="PIC-ISCP-MINI" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PIC_ICSP_MINI_5_PIN">
-<connects>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="PGC" pad="5"/>
-<connect gate="G$1" pin="PGD" pad="4"/>
-<connect gate="G$1" pin="VCC" pad="2"/>
-<connect gate="G$1" pin="VPP" pad="1"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:38219/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CONN-08314" constant="no"/>
-<attribute name="SF_ID" value="PRT-11264" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="PIC16F84A-04_P">
 <packages>
 <package name="DIP254P762X432-18">
@@ -1897,6 +1770,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
+<package name="CAP-PTH-2.54" urn="urn:adsk.eagle:footprint:37402/1" library_version="1">
+<description>2 PTH spaced 0.1" apart</description>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="0.7" diameter="1.651"/>
+<pad name="2" x="1.27" y="0" drill="0.7" diameter="1.651"/>
+<text x="0" y="1.016" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-1.016" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+</package>
 <package name="0603" urn="urn:adsk.eagle:footprint:37386/1" library_version="1">
 <description>&lt;p&gt;&lt;b&gt;Generic 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
@@ -1916,6 +1797,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 <packages3d>
+<package3d name="CAP-PTH-2.54" urn="urn:adsk.eagle:package:37435/1" type="box" library_version="1">
+<description>2 PTH spaced 0.1" apart</description>
+<packageinstances>
+<packageinstance name="CAP-PTH-2.54"/>
+</packageinstances>
+</package3d>
 <package3d name="0603" urn="urn:adsk.eagle:package:37414/1" type="box" library_version="1">
 <description>Generic 1608 (0603) package
 0.2mm courtyard excess rounded to nearest 0.05mm.</description>
@@ -1937,8 +1824,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="47PF" urn="urn:adsk.eagle:component:37454/1" prefix="C" library_version="1">
-<description>&lt;h3&gt;47pF ceramic capacitors&lt;/h3&gt;
+<deviceset name="22PF" urn="urn:adsk.eagle:component:37477/1" prefix="C" library_version="1">
+<description>&lt;h3&gt;22pF ceramic capacitors&lt;/h3&gt;
 &lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="CAP" x="0" y="0"/>
@@ -1954,8 +1841,23 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="CAP-08913"/>
-<attribute name="VALUE" value="47pF"/>
+<attribute name="PROD_ID" value="CAP-07876"/>
+<attribute name="VALUE" value="22pF"/>
+</technology>
+</technologies>
+</device>
+<device name="-PTH-2.54MM-200V-5%" package="CAP-PTH-2.54">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:37435/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-09128"/>
+<attribute name="VALUE" value="22pF"/>
 </technology>
 </technologies>
 </device>
@@ -2004,6 +1906,180 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-2.54" y="4.318" size="1.27" layer="21" font="vector">&gt;NAME</text>
 <text x="-3.302" y="-5.588" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 </package>
+<package name="B3F-40XX" urn="urn:adsk.eagle:footprint:6240284/1" library_version="2">
+<description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;</description>
+<wire x1="-1.905" y1="1.905" x2="1.905" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.905" x2="1.905" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.905" x2="-1.905" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.905" x2="-1.905" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.651" y1="1.651" x2="1.651" y2="1.651" width="0.0508" layer="21"/>
+<wire x1="1.651" y1="-1.651" x2="1.651" y2="1.651" width="0.0508" layer="21"/>
+<wire x1="1.651" y1="-1.651" x2="-1.651" y2="-1.651" width="0.0508" layer="21"/>
+<wire x1="-1.651" y1="1.651" x2="-1.651" y2="-1.651" width="0.0508" layer="21"/>
+<wire x1="-1.016" y1="6.096" x2="-1.016" y2="6.477" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="6.096" x2="1.016" y2="6.096" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="6.477" x2="1.016" y2="6.477" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="6.477" x2="1.016" y2="6.096" width="0.1524" layer="21"/>
+<wire x1="6.096" y1="5.08" x2="5.08" y2="6.096" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="6.096" x2="1.778" y2="6.096" width="0.1524" layer="21"/>
+<wire x1="6.096" y1="5.08" x2="6.096" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="6.096" y1="1.143" x2="6.096" y2="3.81" width="0.1524" layer="51"/>
+<wire x1="6.096" y1="1.143" x2="6.096" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="6.096" y1="-3.81" x2="6.096" y2="-1.143" width="0.1524" layer="51"/>
+<wire x1="5.08" y1="-6.096" x2="6.096" y2="-5.08" width="0.1524" layer="21"/>
+<wire x1="6.096" y1="-5.08" x2="6.096" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="-6.096" y1="1.143" x2="-6.096" y2="3.81" width="0.1524" layer="51"/>
+<wire x1="-6.096" y1="1.143" x2="-6.096" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="-6.096" y1="-3.81" x2="-6.096" y2="-1.143" width="0.1524" layer="51"/>
+<wire x1="-6.096" y1="-3.81" x2="-6.096" y2="-5.08" width="0.1524" layer="21"/>
+<wire x1="-6.096" y1="-5.08" x2="-5.08" y2="-6.096" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-6.096" x2="-1.778" y2="-6.096" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="6.096" x2="-1.778" y2="6.096" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="6.096" x2="-6.096" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="-6.096" y1="5.08" x2="-6.096" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="-6.477" x2="1.016" y2="-6.477" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="-6.477" x2="-1.016" y2="-6.096" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-6.096" x2="1.016" y2="-6.477" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="6.096" x2="4.826" y2="6.35" width="0.1524" layer="21"/>
+<wire x1="4.826" y1="6.35" x2="1.778" y2="6.35" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="6.35" x2="1.778" y2="6.096" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="6.096" x2="1.016" y2="6.096" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="6.35" x2="-1.778" y2="6.096" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="6.096" x2="-1.016" y2="6.096" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="6.35" x2="-4.826" y2="6.35" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="6.096" x2="-4.826" y2="6.35" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="-6.096" x2="1.016" y2="-6.096" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-6.096" x2="1.778" y2="-6.096" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="-6.096" x2="-1.778" y2="-6.35" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="-6.096" x2="-1.016" y2="-6.096" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="-6.35" x2="-4.826" y2="-6.35" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="-6.35" x2="-5.08" y2="-6.096" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="-6.096" x2="1.778" y2="-6.35" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="-6.096" x2="5.08" y2="-6.096" width="0.1524" layer="21"/>
+<wire x1="4.826" y1="-6.35" x2="1.778" y2="-6.35" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-6.096" x2="4.826" y2="-6.35" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.54" x2="-4.572" y2="2.54" width="0.1524" layer="51"/>
+<wire x1="2.921" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="51"/>
+<wire x1="-5.08" y1="-2.54" x2="-4.572" y2="-2.54" width="0.1524" layer="51"/>
+<wire x1="2.921" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="51"/>
+<wire x1="-4.572" y1="2.54" x2="-4.572" y2="0.762" width="0.1524" layer="51"/>
+<wire x1="-4.572" y1="2.54" x2="-2.921" y2="2.54" width="0.1524" layer="51"/>
+<wire x1="-4.572" y1="0.762" x2="-5.08" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="-4.572" y1="-0.762" x2="-4.572" y2="-2.54" width="0.1524" layer="51"/>
+<wire x1="-4.572" y1="-2.54" x2="-2.921" y2="-2.54" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="3.556" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="1.016" width="0.0508" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.0508" layer="21"/>
+<circle x="-4.572" y="2.54" radius="0.127" width="0.1524" layer="51"/>
+<circle x="-4.572" y="-2.54" radius="0.127" width="0.1524" layer="51"/>
+<pad name="3" x="-6.2484" y="-2.4892" drill="1.1938" shape="long"/>
+<pad name="4" x="6.2484" y="-2.4892" drill="1.1938" shape="long"/>
+<pad name="1" x="-6.2484" y="2.4892" drill="1.1938" shape="long"/>
+<pad name="2" x="6.2484" y="2.4892" drill="1.1938" shape="long"/>
+<text x="-5.08" y="6.985" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.175" y="-5.08" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-5.207" y="3.302" size="1.27" layer="21" ratio="10">1</text>
+<text x="3.937" y="3.302" size="1.27" layer="21" ratio="10">2</text>
+<text x="-5.207" y="-4.699" size="1.27" layer="21" ratio="10">3</text>
+<text x="4.064" y="-4.699" size="1.27" layer="21" ratio="10">4</text>
+<rectangle x1="6.096" y1="-2.921" x2="6.604" y2="-2.032" layer="51"/>
+<rectangle x1="6.096" y1="2.032" x2="6.604" y2="2.921" layer="51"/>
+<rectangle x1="-6.604" y1="2.032" x2="-6.096" y2="2.921" layer="51"/>
+<rectangle x1="-6.604" y1="-2.921" x2="-6.096" y2="-2.032" layer="51"/>
+<rectangle x1="2.286" y1="5.842" x2="4.445" y2="6.35" layer="21"/>
+<rectangle x1="-4.445" y1="5.842" x2="-2.286" y2="6.35" layer="21"/>
+<rectangle x1="2.286" y1="-6.35" x2="4.445" y2="-5.842" layer="21"/>
+<rectangle x1="-4.445" y1="-6.35" x2="-2.286" y2="-5.842" layer="21"/>
+<hole x="0" y="-4.4958" drill="1.8034"/>
+<hole x="0" y="4.4958" drill="1.8034"/>
+</package>
+<package name="B3F-40XX-ROUND" urn="urn:adsk.eagle:footprint:6240283/1" library_version="2">
+<description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;</description>
+<wire x1="-1.905" y1="1.905" x2="1.905" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.905" x2="1.905" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.905" x2="-1.905" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.905" x2="-1.905" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.651" y1="1.651" x2="1.651" y2="1.651" width="0.0508" layer="21"/>
+<wire x1="1.651" y1="-1.651" x2="1.651" y2="1.651" width="0.0508" layer="21"/>
+<wire x1="1.651" y1="-1.651" x2="-1.651" y2="-1.651" width="0.0508" layer="21"/>
+<wire x1="-1.651" y1="1.651" x2="-1.651" y2="-1.651" width="0.0508" layer="21"/>
+<wire x1="-1.016" y1="6.096" x2="-1.016" y2="6.477" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="6.096" x2="1.016" y2="6.096" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="6.477" x2="1.016" y2="6.477" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="6.477" x2="1.016" y2="6.096" width="0.1524" layer="21"/>
+<wire x1="6.096" y1="5.08" x2="5.08" y2="6.096" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="6.096" x2="1.778" y2="6.096" width="0.1524" layer="21"/>
+<wire x1="6.096" y1="5.08" x2="6.096" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="6.096" y1="1.143" x2="6.096" y2="3.81" width="0.1524" layer="51"/>
+<wire x1="6.096" y1="1.143" x2="6.096" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="6.096" y1="-3.81" x2="6.096" y2="-1.143" width="0.1524" layer="51"/>
+<wire x1="5.08" y1="-6.096" x2="6.096" y2="-5.08" width="0.1524" layer="21"/>
+<wire x1="6.096" y1="-5.08" x2="6.096" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="-6.096" y1="1.143" x2="-6.096" y2="3.81" width="0.1524" layer="51"/>
+<wire x1="-6.096" y1="1.143" x2="-6.096" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="-6.096" y1="-3.81" x2="-6.096" y2="-1.143" width="0.1524" layer="51"/>
+<wire x1="-6.096" y1="-3.81" x2="-6.096" y2="-5.08" width="0.1524" layer="21"/>
+<wire x1="-6.096" y1="-5.08" x2="-5.08" y2="-6.096" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-6.096" x2="-1.778" y2="-6.096" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="6.096" x2="-1.778" y2="6.096" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="6.096" x2="-6.096" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="-6.096" y1="5.08" x2="-6.096" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="-6.477" x2="1.016" y2="-6.477" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="-6.477" x2="-1.016" y2="-6.096" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-6.096" x2="1.016" y2="-6.477" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="6.096" x2="4.826" y2="6.35" width="0.1524" layer="21"/>
+<wire x1="4.826" y1="6.35" x2="1.778" y2="6.35" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="6.35" x2="1.778" y2="6.096" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="6.096" x2="1.016" y2="6.096" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="6.35" x2="-1.778" y2="6.096" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="6.096" x2="-1.016" y2="6.096" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="6.35" x2="-4.826" y2="6.35" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="6.096" x2="-4.826" y2="6.35" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="-6.096" x2="1.016" y2="-6.096" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-6.096" x2="1.778" y2="-6.096" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="-6.096" x2="-1.778" y2="-6.35" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="-6.096" x2="-1.016" y2="-6.096" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="-6.35" x2="-4.826" y2="-6.35" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="-6.35" x2="-5.08" y2="-6.096" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="-6.096" x2="1.778" y2="-6.35" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="-6.096" x2="5.08" y2="-6.096" width="0.1524" layer="21"/>
+<wire x1="4.826" y1="-6.35" x2="1.778" y2="-6.35" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-6.096" x2="4.826" y2="-6.35" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.54" x2="-4.572" y2="2.54" width="0.1524" layer="51"/>
+<wire x1="2.921" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="51"/>
+<wire x1="-5.08" y1="-2.54" x2="-4.572" y2="-2.54" width="0.1524" layer="51"/>
+<wire x1="2.921" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="51"/>
+<wire x1="-4.572" y1="2.54" x2="-4.572" y2="0.762" width="0.1524" layer="51"/>
+<wire x1="-4.572" y1="2.54" x2="-2.921" y2="2.54" width="0.1524" layer="51"/>
+<wire x1="-4.572" y1="0.762" x2="-5.08" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="-4.572" y1="-0.762" x2="-4.572" y2="-2.54" width="0.1524" layer="51"/>
+<wire x1="-4.572" y1="-2.54" x2="-2.921" y2="-2.54" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="3.556" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="1.016" width="0.0508" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.0508" layer="21"/>
+<circle x="-4.572" y="2.54" radius="0.127" width="0.1524" layer="51"/>
+<circle x="-4.572" y="-2.54" radius="0.127" width="0.1524" layer="51"/>
+<pad name="3" x="-6.2484" y="-2.4892" drill="1.1938" diameter="2.54"/>
+<pad name="4" x="6.2484" y="-2.4892" drill="1.1938" diameter="2.54"/>
+<pad name="1" x="-6.2484" y="2.4892" drill="1.1938" diameter="2.54"/>
+<pad name="2" x="6.2484" y="2.4892" drill="1.1938" diameter="2.54"/>
+<text x="-5.08" y="6.985" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.175" y="-5.08" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-5.207" y="3.302" size="1.27" layer="21" ratio="10">1</text>
+<text x="3.937" y="3.302" size="1.27" layer="21" ratio="10">2</text>
+<text x="-5.207" y="-4.699" size="1.27" layer="21" ratio="10">3</text>
+<text x="4.064" y="-4.699" size="1.27" layer="21" ratio="10">4</text>
+<rectangle x1="6.096" y1="-2.921" x2="6.604" y2="-2.032" layer="51"/>
+<rectangle x1="6.096" y1="2.032" x2="6.604" y2="2.921" layer="51"/>
+<rectangle x1="-6.604" y1="2.032" x2="-6.096" y2="2.921" layer="51"/>
+<rectangle x1="-6.604" y1="-2.921" x2="-6.096" y2="-2.032" layer="51"/>
+<rectangle x1="2.286" y1="5.842" x2="4.445" y2="6.35" layer="21"/>
+<rectangle x1="-4.445" y1="5.842" x2="-2.286" y2="6.35" layer="21"/>
+<rectangle x1="2.286" y1="-6.35" x2="4.445" y2="-5.842" layer="21"/>
+<rectangle x1="-4.445" y1="-6.35" x2="-2.286" y2="-5.842" layer="21"/>
+<hole x="0" y="-4.4958" drill="1.8034"/>
+<hole x="0" y="4.4958" drill="1.8034"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="LED5MMRGB" urn="urn:adsk.eagle:package:6240652/1" type="box" library_version="2">
@@ -2014,6 +2090,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <package3d name="PIRANHA5MM" urn="urn:adsk.eagle:package:6240782/1" type="box" library_version="2">
 <packageinstances>
 <packageinstance name="PIRANHA5MM"/>
+</packageinstances>
+</package3d>
+<package3d name="B3F-40XX" urn="urn:adsk.eagle:package:6240927/1" type="box" library_version="2">
+<description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="B3F-40XX"/>
+</packageinstances>
+</package3d>
+<package3d name="B3F-40XX-ROUND" urn="urn:adsk.eagle:package:6240926/1" type="box" library_version="2">
+<description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="B3F-40XX-ROUND"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2051,6 +2139,27 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="VCC" x="-10.16" y="0" visible="off" length="middle"/>
 <pin name="RED" x="7.62" y="-5.08" visible="off" length="middle" rot="R180"/>
 </symbol>
+<symbol name="TS2" urn="urn:adsk.eagle:symbol:6239471/1" library_version="2">
+<wire x1="0" y1="1.905" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="1.905" x2="-3.175" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="-1.905" x2="-3.175" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="1.905" x2="-4.445" y2="0" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="0" x2="-4.445" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="-4.445" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="1.905" width="0.254" layer="94"/>
+<circle x="0" y="-2.54" radius="0.127" width="0.4064" layer="94"/>
+<circle x="0" y="2.54" radius="0.127" width="0.4064" layer="94"/>
+<text x="-6.35" y="-2.54" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-3.81" y="3.175" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="P" x="0" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="2" rot="R90"/>
+<pin name="S" x="0" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="S1" x="2.54" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="P1" x="2.54" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="2" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="RGBLED_CA" urn="urn:adsk.eagle:component:6240999/1" prefix="LED" library_version="2">
@@ -2083,6 +2192,47 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:6240782/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="40-XX" urn="urn:adsk.eagle:component:6241145/1" prefix="S" uservalue="yes" library_version="2">
+<description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="TS2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="B3F-40XX">
+<connects>
+<connect gate="1" pin="P" pad="3"/>
+<connect gate="1" pin="P1" pad="4"/>
+<connect gate="1" pin="S" pad="1"/>
+<connect gate="1" pin="S1" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6240927/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MF" value="OMRON COMPONENTS USA" constant="no"/>
+<attribute name="MPN" value="B3F-4000" constant="no"/>
+<attribute name="OC_FARNELL" value="176434" constant="no"/>
+<attribute name="OC_NEWARK" value="36K3105" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-ROUND" package="B3F-40XX-ROUND">
+<connects>
+<connect gate="1" pin="P" pad="3"/>
+<connect gate="1" pin="P1" pad="4"/>
+<connect gate="1" pin="S" pad="1"/>
+<connect gate="1" pin="S1" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6240926/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -6375,722 +6525,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Switches" urn="urn:adsk.eagle:library:535">
-<description>&lt;h3&gt;SparkFun Switches, Buttons, Encoders&lt;/h3&gt;
-In this library you'll find switches, buttons, joysticks, and anything that moves to create or disrupt an electrical connection.
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="TACTILE_SWITCH_PTH_6.0MM" urn="urn:adsk.eagle:footprint:40103/1" library_version="1">
-<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - PTH, 6.0mm Square&lt;/h3&gt;
-&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.omron.com/ecb/products/pdf/en-b3f.pdf"&gt;Datasheet&lt;/a&gt; (B3F-1000)&lt;/p&gt;</description>
-<wire x1="3.048" y1="1.016" x2="3.048" y2="2.54" width="0.2032" layer="51"/>
-<wire x1="3.048" y1="2.54" x2="2.54" y2="3.048" width="0.2032" layer="51"/>
-<wire x1="2.54" y1="-3.048" x2="3.048" y2="-2.54" width="0.2032" layer="51"/>
-<wire x1="3.048" y1="-2.54" x2="3.048" y2="-1.016" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="3.048" x2="-3.048" y2="2.54" width="0.2032" layer="51"/>
-<wire x1="-3.048" y1="2.54" x2="-3.048" y2="1.016" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="-3.048" x2="-3.048" y2="-2.54" width="0.2032" layer="51"/>
-<wire x1="-3.048" y1="-2.54" x2="-3.048" y2="-1.016" width="0.2032" layer="51"/>
-<wire x1="2.54" y1="-3.048" x2="2.159" y2="-3.048" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="-3.048" x2="-2.159" y2="-3.048" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="3.048" x2="-2.159" y2="3.048" width="0.2032" layer="51"/>
-<wire x1="2.54" y1="3.048" x2="2.159" y2="3.048" width="0.2032" layer="51"/>
-<wire x1="2.159" y1="3.048" x2="-2.159" y2="3.048" width="0.2032" layer="21"/>
-<wire x1="-2.159" y1="-3.048" x2="2.159" y2="-3.048" width="0.2032" layer="21"/>
-<wire x1="3.048" y1="0.998" x2="3.048" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="-3.048" y1="1.028" x2="-3.048" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="1.27" x2="-2.54" y2="0.508" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="-0.508" x2="-2.54" y2="-1.27" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="0.508" x2="-2.159" y2="-0.381" width="0.2032" layer="51"/>
-<circle x="0" y="0" radius="1.778" width="0.2032" layer="21"/>
-<pad name="1" x="-3.2512" y="2.2606" drill="1.016" diameter="1.8796"/>
-<pad name="2" x="3.2512" y="2.2606" drill="1.016" diameter="1.8796"/>
-<pad name="3" x="-3.2512" y="-2.2606" drill="1.016" diameter="1.8796"/>
-<pad name="4" x="3.2512" y="-2.2606" drill="1.016" diameter="1.8796"/>
-<text x="0" y="3.302" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
-<text x="0" y="-3.175" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
-</package>
-<package name="TACTILE_SWITCH_SMD_4.5MM" urn="urn:adsk.eagle:footprint:40104/1" library_version="1">
-<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 4.5mm Square&lt;/h3&gt;
-&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://spec_sheets.e-switch.com/specs/P010338.pdf"&gt;Dimensional Drawing&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="1.905" y1="1.27" x2="1.905" y2="0.445" width="0.127" layer="51"/>
-<wire x1="1.905" y1="0.445" x2="2.16" y2="-0.01" width="0.127" layer="51"/>
-<wire x1="1.905" y1="-0.23" x2="1.905" y2="-1.115" width="0.127" layer="51"/>
-<wire x1="-2.25" y1="2.25" x2="2.25" y2="2.25" width="0.127" layer="51"/>
-<wire x1="2.25" y1="2.25" x2="2.25" y2="-2.25" width="0.127" layer="51"/>
-<wire x1="2.25" y1="-2.25" x2="-2.25" y2="-2.25" width="0.127" layer="51"/>
-<wire x1="-2.25" y1="-2.25" x2="-2.25" y2="2.25" width="0.127" layer="51"/>
-<wire x1="-2.2" y1="0.8" x2="-2.2" y2="-0.8" width="0.2032" layer="21"/>
-<wire x1="1.3" y1="2.2" x2="-1.3" y2="2.2" width="0.2032" layer="21"/>
-<wire x1="2.2" y1="-0.8" x2="2.2" y2="0.8" width="0.2032" layer="21"/>
-<wire x1="-1.3" y1="-2.2" x2="1.3" y2="-2.2" width="0.2032" layer="21"/>
-<wire x1="2.2" y1="0.8" x2="1.8" y2="0.8" width="0.2032" layer="21"/>
-<wire x1="2.2" y1="-0.8" x2="1.8" y2="-0.8" width="0.2032" layer="21"/>
-<wire x1="-1.8" y1="0.8" x2="-2.2" y2="0.8" width="0.2032" layer="21"/>
-<wire x1="-1.8" y1="-0.8" x2="-2.2" y2="-0.8" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="1.27" width="0.2032" layer="21"/>
-<smd name="1" x="2.225" y="1.75" dx="1.1" dy="0.7" layer="1" rot="R90"/>
-<smd name="2" x="2.225" y="-1.75" dx="1.1" dy="0.7" layer="1" rot="R90"/>
-<smd name="3" x="-2.225" y="-1.75" dx="1.1" dy="0.7" layer="1" rot="R90"/>
-<smd name="4" x="-2.225" y="1.75" dx="1.1" dy="0.7" layer="1" rot="R90"/>
-<text x="0" y="2.413" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
-<text x="0" y="-2.413" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
-</package>
-<package name="TACTILE_SWITCH_PTH_12MM" urn="urn:adsk.eagle:footprint:40105/1" library_version="1">
-<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - PTH, 12mm Square&lt;/h3&gt;
-&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.omron.com/ecb/products/pdf/en-b3f.pdf"&gt;Datasheet&lt;/a&gt; (B3F-5050)&lt;/p&gt;</description>
-<wire x1="5" y1="-1.3" x2="5" y2="-0.7" width="0.2032" layer="51"/>
-<wire x1="5" y1="-0.7" x2="4.5" y2="-0.2" width="0.2032" layer="51"/>
-<wire x1="5" y1="0.2" x2="5" y2="1" width="0.2032" layer="51"/>
-<wire x1="-6" y1="4" x2="-6" y2="5" width="0.2032" layer="21"/>
-<wire x1="-5" y1="6" x2="5" y2="6" width="0.2032" layer="21"/>
-<wire x1="6" y1="5" x2="6" y2="4" width="0.2032" layer="21"/>
-<wire x1="6" y1="1" x2="6" y2="-1" width="0.2032" layer="21"/>
-<wire x1="6" y1="-4" x2="6" y2="-5" width="0.2032" layer="21"/>
-<wire x1="5" y1="-6" x2="-5" y2="-6" width="0.2032" layer="21"/>
-<wire x1="-6" y1="-5" x2="-6" y2="-4" width="0.2032" layer="21"/>
-<wire x1="-6" y1="-1" x2="-6" y2="1" width="0.2032" layer="21"/>
-<wire x1="-6" y1="5" x2="-5" y2="6" width="0.2032" layer="21" curve="-90"/>
-<wire x1="5" y1="6" x2="6" y2="5" width="0.2032" layer="21" curve="-90"/>
-<wire x1="6" y1="-5" x2="5" y2="-6" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-5" y1="-6" x2="-6" y2="-5" width="0.2032" layer="21" curve="-90"/>
-<circle x="0" y="0" radius="3.5" width="0.2032" layer="21"/>
-<circle x="-4.5" y="4.5" radius="0.3" width="0.7" layer="21"/>
-<circle x="4.5" y="4.5" radius="0.3" width="0.7" layer="21"/>
-<circle x="4.5" y="-4.5" radius="0.3" width="0.7" layer="21"/>
-<circle x="-4.5" y="-4.5" radius="0.3" width="0.7" layer="21"/>
-<pad name="4" x="-6.25" y="2.5" drill="1.2" diameter="2.159"/>
-<pad name="2" x="-6.25" y="-2.5" drill="1.2" diameter="2.159"/>
-<pad name="1" x="6.25" y="-2.5" drill="1.2" diameter="2.159"/>
-<pad name="3" x="6.25" y="2.5" drill="1.2" diameter="2.159"/>
-<text x="0" y="6.223" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
-<text x="0" y="-6.223" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
-</package>
-<package name="TACTILE_SWITCH_SMD_6.0X3.5MM" urn="urn:adsk.eagle:footprint:40106/1" library_version="1">
-<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 6.0 x 3.5 mm&lt;/h3&gt;
-&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/1101.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="-3" y1="1.1" x2="-3" y2="-1.1" width="0.127" layer="51"/>
-<wire x1="3" y1="1.1" x2="3" y2="-1.1" width="0.127" layer="51"/>
-<wire x1="-2.75" y1="1.75" x2="-3" y2="1.5" width="0.2032" layer="21" curve="90"/>
-<wire x1="-2.75" y1="1.75" x2="2.75" y2="1.75" width="0.2032" layer="21"/>
-<wire x1="2.75" y1="1.75" x2="3" y2="1.5" width="0.2032" layer="21" curve="-90"/>
-<wire x1="3" y1="-1.5" x2="2.75" y2="-1.75" width="0.2032" layer="21" curve="-90"/>
-<wire x1="2.75" y1="-1.75" x2="-2.75" y2="-1.75" width="0.2032" layer="21"/>
-<wire x1="-3" y1="-1.5" x2="-2.75" y2="-1.75" width="0.2032" layer="21" curve="90"/>
-<wire x1="-3" y1="-1.5" x2="-3" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="-3" y1="1.1" x2="-3" y2="1.5" width="0.2032" layer="21"/>
-<wire x1="3" y1="1.1" x2="3" y2="1.5" width="0.2032" layer="21"/>
-<wire x1="3" y1="-1.5" x2="3" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="-1.5" y1="0.75" x2="1.5" y2="0.75" width="0.2032" layer="21"/>
-<wire x1="1.5" y1="-0.75" x2="-1.5" y2="-0.75" width="0.2032" layer="21"/>
-<wire x1="-1.5" y1="-0.75" x2="-1.5" y2="0.75" width="0.2032" layer="21"/>
-<wire x1="1.5" y1="-0.75" x2="1.5" y2="0.75" width="0.2032" layer="21"/>
-<wire x1="-2" y1="0" x2="-1" y2="0" width="0.127" layer="51"/>
-<wire x1="-1" y1="0" x2="0.1" y2="0.5" width="0.127" layer="51"/>
-<wire x1="0.3" y1="0" x2="2" y2="0" width="0.127" layer="51"/>
-<smd name="1" x="-3.15" y="0" dx="2.3" dy="1.6" layer="1" rot="R180"/>
-<smd name="2" x="3.15" y="0" dx="2.3" dy="1.6" layer="1" rot="R180"/>
-<text x="0" y="1.905" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
-<text x="0" y="-1.905" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
-</package>
-<package name="TACTILE_SWITCH_SMD_6.2MM_TALL" urn="urn:adsk.eagle:footprint:40107/1" library_version="1">
-<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 6.2mm Square&lt;/h3&gt;
-&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.apem.com/files/apem/brochures/ADTS6-ADTSM-KTSC6.pdf"&gt;Datasheet&lt;/a&gt; (ADTSM63NVTR)&lt;/p&gt;</description>
-<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.2032" layer="21"/>
-<wire x1="3" y1="-3" x2="3" y2="3" width="0.2032" layer="21"/>
-<wire x1="3" y1="3" x2="-3" y2="3" width="0.2032" layer="21"/>
-<wire x1="-3" y1="3" x2="-3" y2="-3" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="1.75" width="0.2032" layer="21"/>
-<smd name="A1" x="-3.975" y="-2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
-<smd name="A2" x="3.975" y="-2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
-<smd name="B1" x="-3.975" y="2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
-<smd name="B2" x="3.975" y="2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
-<text x="0" y="3.175" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
-<text x="0" y="-3.175" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
-</package>
-<package name="TACTILE_SWITCH_PTH_RIGHT_ANGLE_KIT" urn="urn:adsk.eagle:footprint:40108/1" library_version="1">
-<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - PTH, Right-angle&lt;/h3&gt;
-&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Components/Switches/SW016.JPG"&gt;Dimensional Drawing&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="1.5" y1="-3.8" x2="-1.5" y2="-3.8" width="0.127" layer="51"/>
-<wire x1="-3.65" y1="-2" x2="-3.65" y2="3.5" width="0.127" layer="51"/>
-<wire x1="-3.65" y1="3.5" x2="-3" y2="3.5" width="0.127" layer="51"/>
-<wire x1="3" y1="3.5" x2="3.65" y2="3.5" width="0.127" layer="51"/>
-<wire x1="3.65" y1="3.5" x2="3.65" y2="-2" width="0.127" layer="51"/>
-<wire x1="-3" y1="2" x2="3" y2="2" width="0.127" layer="51"/>
-<wire x1="-3" y1="2" x2="-3" y2="3.5" width="0.127" layer="51"/>
-<wire x1="3" y1="2" x2="3" y2="3.5" width="0.127" layer="51"/>
-<wire x1="-3.65" y1="-2" x2="-1.5" y2="-2" width="0.127" layer="51"/>
-<wire x1="-1.5" y1="-2" x2="1.5" y2="-2" width="0.127" layer="51"/>
-<wire x1="1.5" y1="-2" x2="3.65" y2="-2" width="0.127" layer="51"/>
-<wire x1="1.5" y1="-2" x2="1.5" y2="-3.8" width="0.127" layer="51"/>
-<wire x1="-1.5" y1="-2" x2="-1.5" y2="-3.8" width="0.127" layer="51"/>
-<wire x1="-3.777" y1="1" x2="-3.777" y2="-2.127" width="0.2032" layer="21"/>
-<wire x1="-3.777" y1="-2.127" x2="3.777" y2="-2.127" width="0.2032" layer="21"/>
-<wire x1="3.777" y1="-2.127" x2="3.777" y2="1" width="0.2032" layer="21"/>
-<wire x1="2" y1="2.127" x2="-2" y2="2.127" width="0.2032" layer="21"/>
-<pad name="ANCHOR1" x="-3.5" y="2.5" drill="1.2" diameter="2.2" stop="no"/>
-<pad name="ANCHOR2" x="3.5" y="2.5" drill="1.2" diameter="2.2" stop="no"/>
-<pad name="1" x="-2.5" y="0" drill="0.8" diameter="1.7" stop="no"/>
-<pad name="2" x="2.5" y="0" drill="0.8" diameter="1.7" stop="no"/>
-<circle x="2.5" y="0" radius="0.4445" width="0" layer="29"/>
-<circle x="-2.5" y="0" radius="0.4445" width="0" layer="29"/>
-<circle x="-3.5" y="2.5" radius="0.635" width="0" layer="29"/>
-<circle x="3.5" y="2.5" radius="0.635" width="0" layer="29"/>
-<circle x="-3.5" y="2.5" radius="1.143" width="0" layer="30"/>
-<circle x="2.5" y="0" radius="0.889" width="0" layer="30"/>
-<circle x="-2.5" y="0" radius="0.889" width="0" layer="30"/>
-<circle x="3.5" y="2.5" radius="1.143" width="0" layer="30"/>
-<text x="0" y="2.286" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
-<text x="0" y="-2.286" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
-</package>
-<package name="TACTILE_SWITCH_SMD_12MM" urn="urn:adsk.eagle:footprint:40109/1" library_version="1">
-<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 12mm Square&lt;/h3&gt;
-&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Components/Switches/N301102.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="5" y1="-1.3" x2="5" y2="-0.7" width="0.2032" layer="51"/>
-<wire x1="5" y1="-0.7" x2="4.5" y2="-0.2" width="0.2032" layer="51"/>
-<wire x1="5" y1="0.2" x2="5" y2="1" width="0.2032" layer="51"/>
-<wire x1="-6" y1="4" x2="-6" y2="5" width="0.2032" layer="21"/>
-<wire x1="-5" y1="6" x2="5" y2="6" width="0.2032" layer="21"/>
-<wire x1="6" y1="5" x2="6" y2="4" width="0.2032" layer="21"/>
-<wire x1="6" y1="1" x2="6" y2="-1" width="0.2032" layer="21"/>
-<wire x1="6" y1="-4" x2="6" y2="-5" width="0.2032" layer="21"/>
-<wire x1="5" y1="-6" x2="-5" y2="-6" width="0.2032" layer="21"/>
-<wire x1="-6" y1="-5" x2="-6" y2="-4" width="0.2032" layer="21"/>
-<wire x1="-6" y1="-1" x2="-6" y2="1" width="0.2032" layer="21"/>
-<wire x1="-6" y1="-5" x2="-5" y2="-6" width="0.2032" layer="21"/>
-<wire x1="6" y1="-5" x2="5" y2="-6" width="0.2032" layer="21"/>
-<wire x1="6" y1="5" x2="5" y2="6" width="0.2032" layer="21"/>
-<wire x1="-5" y1="6" x2="-6" y2="5" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="3.5" width="0.2032" layer="21"/>
-<circle x="-4.5" y="4.5" radius="0.3" width="0.7" layer="21"/>
-<circle x="4.5" y="4.5" radius="0.3" width="0.7" layer="21"/>
-<circle x="4.5" y="-4.5" radius="0.3" width="0.7" layer="21"/>
-<circle x="-4.5" y="-4.5" radius="0.3" width="0.7" layer="21"/>
-<smd name="4" x="-6.975" y="2.5" dx="1.6" dy="1.55" layer="1"/>
-<smd name="2" x="-6.975" y="-2.5" dx="1.6" dy="1.55" layer="1"/>
-<smd name="1" x="6.975" y="-2.5" dx="1.6" dy="1.55" layer="1"/>
-<smd name="3" x="6.975" y="2.5" dx="1.6" dy="1.55" layer="1"/>
-<text x="0" y="6.223" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
-<text x="0" y="-6.223" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
-</package>
-<package name="TACTILE_SWITCH_PTH_6.0MM_KIT" urn="urn:adsk.eagle:footprint:40110/1" library_version="1">
-<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - PTH, 6.0mm Square&lt;/h3&gt;
-&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.omron.com/ecb/products/pdf/en-b3f.pdf"&gt;Datasheet&lt;/a&gt; (B3F-1000)&lt;/p&gt;</description>
-<wire x1="3.048" y1="1.016" x2="3.048" y2="2.54" width="0.2032" layer="51"/>
-<wire x1="3.048" y1="2.54" x2="2.54" y2="3.048" width="0.2032" layer="51"/>
-<wire x1="2.54" y1="-3.048" x2="3.048" y2="-2.54" width="0.2032" layer="51"/>
-<wire x1="3.048" y1="-2.54" x2="3.048" y2="-1.016" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="3.048" x2="-3.048" y2="2.54" width="0.2032" layer="51"/>
-<wire x1="-3.048" y1="2.54" x2="-3.048" y2="1.016" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="-3.048" x2="-3.048" y2="-2.54" width="0.2032" layer="51"/>
-<wire x1="-3.048" y1="-2.54" x2="-3.048" y2="-1.016" width="0.2032" layer="51"/>
-<wire x1="2.54" y1="-3.048" x2="2.159" y2="-3.048" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="-3.048" x2="-2.159" y2="-3.048" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="3.048" x2="-2.159" y2="3.048" width="0.2032" layer="51"/>
-<wire x1="2.54" y1="3.048" x2="2.159" y2="3.048" width="0.2032" layer="51"/>
-<wire x1="2.159" y1="3.048" x2="-2.159" y2="3.048" width="0.2032" layer="21"/>
-<wire x1="-2.159" y1="-3.048" x2="2.159" y2="-3.048" width="0.2032" layer="21"/>
-<wire x1="3.048" y1="0.998" x2="3.048" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="-3.048" y1="1.028" x2="-3.048" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="1.27" x2="-2.54" y2="0.508" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="-0.508" x2="-2.54" y2="-1.27" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="0.508" x2="-2.159" y2="-0.381" width="0.2032" layer="51"/>
-<circle x="0" y="0" radius="1.778" width="0.2032" layer="21"/>
-<pad name="1" x="-3.2512" y="2.2606" drill="1.016" diameter="1.8796" stop="no"/>
-<pad name="2" x="3.2512" y="2.2606" drill="1.016" diameter="1.8796" stop="no"/>
-<pad name="3" x="-3.2512" y="-2.2606" drill="1.016" diameter="1.8796" stop="no"/>
-<pad name="4" x="3.2512" y="-2.2606" drill="1.016" diameter="1.8796" stop="no"/>
-<polygon width="0.127" layer="30">
-<vertex x="-3.2664" y="3.142"/>
-<vertex x="-3.2589" y="3.1445" curve="89.986886"/>
-<vertex x="-4.1326" y="2.286"/>
-<vertex x="-4.1351" y="2.2657" curve="90.00652"/>
-<vertex x="-3.2563" y="1.392"/>
-<vertex x="-3.2487" y="1.3869" curve="90.006616"/>
-<vertex x="-2.3826" y="2.2403"/>
-<vertex x="-2.3775" y="2.2683" curve="89.98711"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="-3.2462" y="2.7026"/>
-<vertex x="-3.2589" y="2.7051" curve="90.026544"/>
-<vertex x="-3.6881" y="2.2733"/>
-<vertex x="-3.6881" y="2.2632" curve="89.974074"/>
-<vertex x="-3.2562" y="1.8213"/>
-<vertex x="-3.2259" y="1.8186" curve="90.051271"/>
-<vertex x="-2.8093" y="2.2658"/>
-<vertex x="-2.8093" y="2.2606" curve="90.012964"/>
-</polygon>
-<polygon width="0.127" layer="30">
-<vertex x="3.2411" y="3.1395"/>
-<vertex x="3.2486" y="3.142" curve="89.986886"/>
-<vertex x="2.3749" y="2.2835"/>
-<vertex x="2.3724" y="2.2632" curve="90.00652"/>
-<vertex x="3.2512" y="1.3895"/>
-<vertex x="3.2588" y="1.3844" curve="90.006616"/>
-<vertex x="4.1249" y="2.2378"/>
-<vertex x="4.13" y="2.2658" curve="89.98711"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="3.2613" y="2.7001"/>
-<vertex x="3.2486" y="2.7026" curve="90.026544"/>
-<vertex x="2.8194" y="2.2708"/>
-<vertex x="2.8194" y="2.2607" curve="89.974074"/>
-<vertex x="3.2513" y="1.8188"/>
-<vertex x="3.2816" y="1.8161" curve="90.051271"/>
-<vertex x="3.6982" y="2.2633"/>
-<vertex x="3.6982" y="2.2581" curve="90.012964"/>
-</polygon>
-<polygon width="0.127" layer="30">
-<vertex x="-3.2613" y="-1.3868"/>
-<vertex x="-3.2538" y="-1.3843" curve="89.986886"/>
-<vertex x="-4.1275" y="-2.2428"/>
-<vertex x="-4.13" y="-2.2631" curve="90.00652"/>
-<vertex x="-3.2512" y="-3.1368"/>
-<vertex x="-3.2436" y="-3.1419" curve="90.006616"/>
-<vertex x="-2.3775" y="-2.2885"/>
-<vertex x="-2.3724" y="-2.2605" curve="89.98711"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="-3.2411" y="-1.8262"/>
-<vertex x="-3.2538" y="-1.8237" curve="90.026544"/>
-<vertex x="-3.683" y="-2.2555"/>
-<vertex x="-3.683" y="-2.2656" curve="89.974074"/>
-<vertex x="-3.2511" y="-2.7075"/>
-<vertex x="-3.2208" y="-2.7102" curve="90.051271"/>
-<vertex x="-2.8042" y="-2.263"/>
-<vertex x="-2.8042" y="-2.2682" curve="90.012964"/>
-</polygon>
-<polygon width="0.127" layer="30">
-<vertex x="3.2411" y="-1.3843"/>
-<vertex x="3.2486" y="-1.3818" curve="89.986886"/>
-<vertex x="2.3749" y="-2.2403"/>
-<vertex x="2.3724" y="-2.2606" curve="90.00652"/>
-<vertex x="3.2512" y="-3.1343"/>
-<vertex x="3.2588" y="-3.1394" curve="90.006616"/>
-<vertex x="4.1249" y="-2.286"/>
-<vertex x="4.13" y="-2.258" curve="89.98711"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="3.2613" y="-1.8237"/>
-<vertex x="3.2486" y="-1.8212" curve="90.026544"/>
-<vertex x="2.8194" y="-2.253"/>
-<vertex x="2.8194" y="-2.2631" curve="89.974074"/>
-<vertex x="3.2513" y="-2.705"/>
-<vertex x="3.2816" y="-2.7077" curve="90.051271"/>
-<vertex x="3.6982" y="-2.2605"/>
-<vertex x="3.6982" y="-2.2657" curve="90.012964"/>
-</polygon>
-<text x="0" y="3.175" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
-<text x="0" y="-3.175" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
-</package>
-<package name="TACTILE_SWITCH_SMD_5.2MM" urn="urn:adsk.eagle:footprint:40111/1" library_version="1">
-<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 5.2mm Square&lt;/h3&gt;
-&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/Buttons/SMD-Button.pdf"&gt;Dimensional Drawing&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="-1.54" y1="-2.54" x2="-2.54" y2="-1.54" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="-1.24" x2="-2.54" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="1.54" x2="-1.54" y2="2.54" width="0.2032" layer="51"/>
-<wire x1="-1.54" y1="2.54" x2="1.54" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="1.54" y1="2.54" x2="2.54" y2="1.54" width="0.2032" layer="51"/>
-<wire x1="2.54" y1="1.24" x2="2.54" y2="-1.24" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="-1.54" x2="1.54" y2="-2.54" width="0.2032" layer="51"/>
-<wire x1="1.54" y1="-2.54" x2="-1.54" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="1.905" y2="0.445" width="0.127" layer="51"/>
-<wire x1="1.905" y1="0.445" x2="2.16" y2="-0.01" width="0.127" layer="51"/>
-<wire x1="1.905" y1="-0.23" x2="1.905" y2="-1.115" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="1.27" width="0.2032" layer="21"/>
-<smd name="1" x="-2.794" y="1.905" dx="0.762" dy="1.524" layer="1" rot="R90"/>
-<smd name="2" x="2.794" y="1.905" dx="0.762" dy="1.524" layer="1" rot="R90"/>
-<smd name="3" x="-2.794" y="-1.905" dx="0.762" dy="1.524" layer="1" rot="R90"/>
-<smd name="4" x="2.794" y="-1.905" dx="0.762" dy="1.524" layer="1" rot="R90"/>
-<text x="0" y="2.667" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
-<text x="0" y="-2.667" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
-</package>
-<package name="TACTILE_SWITCH_SMD_RIGHT_ANGLE" urn="urn:adsk.eagle:footprint:40112/1" library_version="1">
-<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, Right-angle&lt;/h3&gt;
-&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;</description>
-<hole x="0" y="0.9" drill="0.7"/>
-<hole x="0" y="-0.9" drill="0.7"/>
-<smd name="1" x="-1.95" y="0" dx="2" dy="1.1" layer="1" rot="R90"/>
-<smd name="2" x="1.95" y="0" dx="2" dy="1.1" layer="1" rot="R90"/>
-<wire x1="-2" y1="1.2" x2="-2" y2="1.5" width="0.2032" layer="21"/>
-<wire x1="-2" y1="1.5" x2="2" y2="1.5" width="0.2032" layer="21"/>
-<wire x1="2" y1="1.5" x2="2" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="-2" y1="-1.2" x2="-2" y2="-1.5" width="0.2032" layer="21"/>
-<wire x1="-2" y1="-1.5" x2="-0.7" y2="-1.5" width="0.2032" layer="21"/>
-<wire x1="-0.7" y1="-1.5" x2="0.7" y2="-1.5" width="0.2032" layer="21"/>
-<wire x1="0.7" y1="-1.5" x2="2" y2="-1.5" width="0.2032" layer="21"/>
-<wire x1="2" y1="-1.5" x2="2" y2="-1.2" width="0.2032" layer="21"/>
-<wire x1="-0.7" y1="-2.1" x2="0.7" y2="-2.1" width="0.2032" layer="21"/>
-<wire x1="0.7" y1="-2.1" x2="0.7" y2="-1.5" width="0.2032" layer="21"/>
-<wire x1="-0.7" y1="-2.1" x2="-0.7" y2="-1.5" width="0.2032" layer="21"/>
-<text x="0" y="1.651" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
-<text x="0" y="-2.286" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
-</package>
-<package name="TACTILE_SWITCH_SMD_4.6X2.8MM" urn="urn:adsk.eagle:footprint:40113/1" library_version="1">
-<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 4.6 x 2.8mm&lt;/h3&gt;
-&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.ck-components.com/media/1479/kmr2.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
-<smd name="3" x="2.05" y="0.8" dx="0.9" dy="1" layer="1"/>
-<smd name="2" x="2.05" y="-0.8" dx="0.9" dy="1" layer="1"/>
-<smd name="1" x="-2.05" y="-0.8" dx="0.9" dy="1" layer="1"/>
-<smd name="4" x="-2.05" y="0.8" dx="0.9" dy="1" layer="1"/>
-<wire x1="-2.1" y1="1.4" x2="-2.1" y2="-1.4" width="0.127" layer="51"/>
-<wire x1="2.1" y1="-1.4" x2="2.1" y2="1.4" width="0.127" layer="51"/>
-<wire x1="-2.1" y1="1.4" x2="2.1" y2="1.4" width="0.127" layer="51"/>
-<wire x1="-2.1" y1="-1.4" x2="2.1" y2="-1.4" width="0.127" layer="51"/>
-<wire x1="1.338" y1="-1.4" x2="-1.338" y2="-1.4" width="0.2032" layer="21"/>
-<wire x1="-1.338" y1="1.4" x2="1.338" y2="1.4" width="0.2032" layer="21"/>
-<wire x1="-2.1" y1="0.13" x2="-2.1" y2="-0.13" width="0.2032" layer="21"/>
-<wire x1="2.1" y1="-0.13" x2="2.1" y2="0.13" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="0.805" width="0.127" layer="21"/>
-<rectangle x1="-2.3" y1="0.5" x2="-2.1" y2="1.1" layer="51"/>
-<rectangle x1="-2.3" y1="-1.1" x2="-2.1" y2="-0.5" layer="51"/>
-<rectangle x1="2.1" y1="-1.1" x2="2.3" y2="-0.5" layer="51" rot="R180"/>
-<rectangle x1="2.1" y1="0.5" x2="2.3" y2="1.1" layer="51" rot="R180"/>
-<text x="0" y="1.524" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
-<text x="0" y="-1.524" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="TACTILE_SWITCH_PTH_6.0MM" urn="urn:adsk.eagle:package:40163/1" type="box" library_version="1">
-<description>Momentary Switch (Pushbutton) - SPST - PTH, 6.0mm Square
-Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
-Datasheet (B3F-1000)</description>
-<packageinstances>
-<packageinstance name="TACTILE_SWITCH_PTH_6.0MM"/>
-</packageinstances>
-</package3d>
-<package3d name="TACTILE_SWITCH_SMD_4.5MM" urn="urn:adsk.eagle:package:40162/1" type="box" library_version="1">
-<description>Momentary Switch (Pushbutton) - SPST - SMD, 4.5mm Square
-Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
-Dimensional Drawing</description>
-<packageinstances>
-<packageinstance name="TACTILE_SWITCH_SMD_4.5MM"/>
-</packageinstances>
-</package3d>
-<package3d name="TACTILE_SWITCH_PTH_12MM" urn="urn:adsk.eagle:package:40164/1" type="box" library_version="1">
-<description>Momentary Switch (Pushbutton) - SPST - PTH, 12mm Square
-Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
-Datasheet (B3F-5050)</description>
-<packageinstances>
-<packageinstance name="TACTILE_SWITCH_PTH_12MM"/>
-</packageinstances>
-</package3d>
-<package3d name="TACTILE_SWITCH_SMD_6.0X3.5MM" urn="urn:adsk.eagle:package:40165/1" type="box" library_version="1">
-<description>Momentary Switch (Pushbutton) - SPST - SMD, 6.0 x 3.5 mm
-Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
-Datasheet</description>
-<packageinstances>
-<packageinstance name="TACTILE_SWITCH_SMD_6.0X3.5MM"/>
-</packageinstances>
-</package3d>
-<package3d name="TACTILE_SWITCH_SMD_6.2MM_TALL" urn="urn:adsk.eagle:package:40172/1" type="box" library_version="1">
-<description>Momentary Switch (Pushbutton) - SPST - SMD, 6.2mm Square
-Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
-Datasheet (ADTSM63NVTR)</description>
-<packageinstances>
-<packageinstance name="TACTILE_SWITCH_SMD_6.2MM_TALL"/>
-</packageinstances>
-</package3d>
-<package3d name="TACTILE_SWITCH_PTH_RIGHT_ANGLE_KIT" urn="urn:adsk.eagle:package:40168/1" type="box" library_version="1">
-<description>Momentary Switch (Pushbutton) - SPST - PTH, Right-angle
-Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
-Dimensional Drawing</description>
-<packageinstances>
-<packageinstance name="TACTILE_SWITCH_PTH_RIGHT_ANGLE_KIT"/>
-</packageinstances>
-</package3d>
-<package3d name="TACTILE_SWITCH_SMD_12MM" urn="urn:adsk.eagle:package:40166/1" type="box" library_version="1">
-<description>Momentary Switch (Pushbutton) - SPST - SMD, 12mm Square
-Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
-Datasheet</description>
-<packageinstances>
-<packageinstance name="TACTILE_SWITCH_SMD_12MM"/>
-</packageinstances>
-</package3d>
-<package3d name="TACTILE_SWITCH_PTH_6.0MM_KIT" urn="urn:adsk.eagle:package:40170/1" type="box" library_version="1">
-<description>Momentary Switch (Pushbutton) - SPST - PTH, 6.0mm Square
-Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
-Warning: This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.
-Datasheet (B3F-1000)</description>
-<packageinstances>
-<packageinstance name="TACTILE_SWITCH_PTH_6.0MM_KIT"/>
-</packageinstances>
-</package3d>
-<package3d name="TACTILE_SWITCH_SMD_5.2MM" urn="urn:adsk.eagle:package:40167/1" type="box" library_version="1">
-<description>Momentary Switch (Pushbutton) - SPST - SMD, 5.2mm Square
-Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
-Dimensional Drawing</description>
-<packageinstances>
-<packageinstance name="TACTILE_SWITCH_SMD_5.2MM"/>
-</packageinstances>
-</package3d>
-<package3d name="TACTILE_SWITCH_SMD_RIGHT_ANGLE" urn="urn:adsk.eagle:package:40169/1" type="box" library_version="1">
-<description>Momentary Switch (Pushbutton) - SPST - SMD, Right-angle
-Normally-open (NO) SPST momentary switches (buttons, pushbuttons).</description>
-<packageinstances>
-<packageinstance name="TACTILE_SWITCH_SMD_RIGHT_ANGLE"/>
-</packageinstances>
-</package3d>
-<package3d name="TACTILE_SWITCH_SMD_4.6X2.8MM" urn="urn:adsk.eagle:package:40176/1" type="box" library_version="1">
-<description>Momentary Switch (Pushbutton) - SPST - SMD, 4.6 x 2.8mm
-Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
-Datasheet</description>
-<packageinstances>
-<packageinstance name="TACTILE_SWITCH_SMD_4.6X2.8MM"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="SWITCH-MOMENTARY-2" urn="urn:adsk.eagle:symbol:40102/1" library_version="1">
-<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST&lt;/h3&gt;
-&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;</description>
-<wire x1="1.905" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="1.905" y2="1.27" width="0.254" layer="94"/>
-<circle x="-2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
-<circle x="2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
-<text x="0" y="1.524" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.508" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="2"/>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MOMENTARY-SWITCH-SPST" urn="urn:adsk.eagle:component:40205/1" prefix="S" library_version="1">
-<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST&lt;/h3&gt;
-&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
-&lt;h4&gt;Variants&lt;/h4&gt;
-&lt;h5&gt;PTH-12MM - 12mm square, through-hole&lt;/h5&gt;
-&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9190"&gt;Momentary Pushbutton Switch - 12mm Square&lt;/a&gt; (COM-09190)&lt;/li&gt;&lt;/ul&gt;
-&lt;h5&gt;PTH-6.0MM, PTH-6.0MM-KIT - 6.0mm square, through-hole&lt;/h5&gt;
-&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/97"&gt;Mini Pushbutton Switch&lt;/a&gt; (COM-00097)&lt;/li&gt;
-&lt;li&gt;KIT package intended for soldering kit's - only one side of pads' copper is exposed.&lt;/li&gt;&lt;/ul&gt;
-&lt;h5&gt;PTH-RIGHT-ANGLE-KIT - Right-angle, through-hole&lt;/h5&gt;
-&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10791"&gt;Right Angle Tactile Button&lt;/a&gt; - Used on &lt;a href="https://www.sparkfun.com/products/11734"&gt;
-SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;h5&gt;SMD-12MM - 12mm square, surface-mount&lt;/h5&gt;
-&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12993"&gt;Tactile Button - SMD (12mm)&lt;/a&gt; (COM-12993)&lt;/li&gt;
-&lt;li&gt;Used on &lt;a href="https://www.sparkfun.com/products/11888"&gt;SparkFun PicoBoard&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;h5&gt;SMD-4.5MM - 4.5mm Square Trackball Switch&lt;/h5&gt;
-&lt;ul&gt;&lt;li&gt;Used on &lt;a href="https://www.sparkfun.com/products/13169"&gt;SparkFun Blackberry Trackballer Breakout&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;h5&gt;SMD-4.6MMX2.8MM -  4.60mm x 2.80mm, surface mount&lt;/h5&gt;
-&lt;ul&gt;&lt;li&gt;Used on &lt;a href="https://www.sparkfun.com/products/13664"&gt;SparkFun SAMD21 Mini Breakout&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;h5&gt;SMD-5.2MM, SMD-5.2-REDUNDANT - 5.2mm square, surface-mount&lt;/h5&gt;
-&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8720"&gt;Mini Pushbutton Switch - SMD&lt;/a&gt; (COM-08720)&lt;/li&gt;
-&lt;li&gt;Used on &lt;a href="https://www.sparkfun.com/products/11114"&gt;Arduino Pro Mini&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;REDUNDANT package connects both switch circuits together&lt;/li&gt;&lt;/ul&gt;
-&lt;h5&gt;SMD-6.0X3.5MM - 6.0 x 3.5mm, surface mount&lt;/h5&gt;
-&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8229"&gt;Momentary Reset Switch SMD&lt;/a&gt; (COM-08229)&lt;/li&gt;&lt;/ul&gt;
-&lt;h5&gt;SMD-6.2MM-TALL - 6.2mm square, surface mount&lt;/h5&gt;
-&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12992"&gt;Tactile Button - SMD (6mm)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Used on &lt;a href="https://www.sparkfun.com/products/12651"&gt;SparkFun Digital Sandbox&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;h5&gt;SMD-RIGHT-ANGLE - Right-angle, surface mount&lt;/h5&gt;
-&lt;ul&gt;&lt;li&gt;Used on &lt;a href="https://www.sparkfun.com/products/13036"&gt;SparkFun Block for Intel® Edison - Arduino&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="SWITCH-MOMENTARY-2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-PTH-6.0MM" package="TACTILE_SWITCH_PTH_6.0MM">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="3"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40163/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value=" SWCH-08441"/>
-<attribute name="SF_SKU" value="COM-00097"/>
-</technology>
-</technologies>
-</device>
-<device name="-SMD-4.5MM" package="TACTILE_SWITCH_SMD_4.5MM">
-<connects>
-<connect gate="G$1" pin="1" pad="2 3"/>
-<connect gate="G$1" pin="2" pad="1 4"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40162/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="SWCH-09213"/>
-</technology>
-</technologies>
-</device>
-<device name="-PTH-12MM" package="TACTILE_SWITCH_PTH_12MM">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="3"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40164/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="SWCH-09185"/>
-<attribute name="SF_SKU" value="COM-09190"/>
-</technology>
-</technologies>
-</device>
-<device name="-SMD-6.0X3.5MM" package="TACTILE_SWITCH_SMD_6.0X3.5MM">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40165/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="SWCH-00815"/>
-<attribute name="SF_SKU" value="COM-08229"/>
-</technology>
-</technologies>
-</device>
-<device name="-SMD-6.2MM-TALL" package="TACTILE_SWITCH_SMD_6.2MM_TALL">
-<connects>
-<connect gate="G$1" pin="1" pad="A2"/>
-<connect gate="G$1" pin="2" pad="B2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40172/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="SWCH-11966"/>
-<attribute name="SF_SKU" value="COM-12992"/>
-</technology>
-</technologies>
-</device>
-<device name="-PTH-RIGHT-ANGLE-KIT" package="TACTILE_SWITCH_PTH_RIGHT_ANGLE_KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40168/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CONN-10672"/>
-<attribute name="SF_SKU" value="COM-10791"/>
-</technology>
-</technologies>
-</device>
-<device name="-SMD-12MM" package="TACTILE_SWITCH_SMD_12MM">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="3"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40166/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="SWCH-11967"/>
-<attribute name="SF_SKU" value="COM-12993"/>
-</technology>
-</technologies>
-</device>
-<device name="-PTH-6.0MM-KIT" package="TACTILE_SWITCH_PTH_6.0MM_KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="3"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40170/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="SWCH-08441"/>
-<attribute name="SF_SKU" value="COM-00097 "/>
-</technology>
-</technologies>
-</device>
-<device name="-SMD-5.2MM" package="TACTILE_SWITCH_SMD_5.2MM">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="3"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40167/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="SWCH-08247"/>
-<attribute name="SF_SKU" value="COM-08720"/>
-</technology>
-</technologies>
-</device>
-<device name="-SMD-5.2-REDUNDANT" package="TACTILE_SWITCH_SMD_5.2MM">
-<connects>
-<connect gate="G$1" pin="1" pad="1 2"/>
-<connect gate="G$1" pin="2" pad="3 4"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40167/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="SWCH-08247"/>
-<attribute name="SF_SKU" value="COM-08720"/>
-</technology>
-</technologies>
-</device>
-<device name="-SMD-RIGHT-ANGLE" package="TACTILE_SWITCH_SMD_RIGHT_ANGLE">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40169/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="COMP-12265" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="-SMD-4.6X2.8MM" package="TACTILE_SWITCH_SMD_4.6X2.8MM">
-<connects>
-<connect gate="G$1" pin="1" pad="1 2"/>
-<connect gate="G$1" pin="2" pad="3 4"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40176/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="SWCH-13065"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="buzzer" urn="urn:adsk.eagle:library:113">
 <description>&lt;b&gt;Speakers and Buzzers&lt;/b&gt;&lt;p&gt;
 &lt;ul&gt;Distributors:
@@ -7100,30 +6534,24 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 &lt;/ul&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="EB2505" urn="urn:adsk.eagle:footprint:5236/1" library_version="1">
+<package name="F/QMBIII" urn="urn:adsk.eagle:footprint:5227/1" library_version="1">
 <description>&lt;b&gt;BUZZER&lt;/b&gt;</description>
-<wire x1="-1.524" y1="-10.045" x2="1.524" y2="-10.045" width="0.1524" layer="21" curve="-342.746232"/>
-<wire x1="3.628" y1="3.556" x2="3.628" y2="-3.556" width="0.1524" layer="21" curve="271.145271"/>
-<wire x1="-1.524" y1="-12.48" x2="-1.524" y2="-10.045" width="0.1524" layer="21"/>
-<wire x1="-8.255" y1="3.302" x2="-6.985" y2="3.302" width="0.1524" layer="21"/>
-<wire x1="-7.62" y1="2.667" x2="-7.62" y2="3.937" width="0.1524" layer="21"/>
-<wire x1="6.096" y1="-3.556" x2="6.096" y2="3.556" width="0.1524" layer="21" curve="180"/>
-<wire x1="1.524" y1="-12.48" x2="1.524" y2="-10.045" width="0.1524" layer="21"/>
-<wire x1="3.628" y1="-3.556" x2="6.096" y2="-3.556" width="0.1524" layer="21"/>
-<wire x1="3.628" y1="3.556" x2="6.096" y2="3.556" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="12.573" width="0.1524" layer="21"/>
-<circle x="-7.62" y="3.302" radius="1.016" width="0.1524" layer="21"/>
-<pad name="+" x="-7.493" y="0" drill="1.3208" diameter="2.54" shape="octagon"/>
-<pad name="-" x="7.493" y="0" drill="1.3208" diameter="2.54" shape="octagon"/>
-<text x="3.175" y="12.7" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.429" y="-7.62" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="3.429" y1="2.54" x2="4.191" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="2.159" x2="3.81" y2="2.921" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="5.9944" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="1.1938" width="0.1524" layer="21"/>
+<circle x="3.81" y="2.54" radius="0.635" width="0.1524" layer="21"/>
+<pad name="-" x="-3.2512" y="0" drill="0.9144" diameter="2.159" shape="octagon"/>
+<pad name="+" x="3.2512" y="0" drill="0.9144" diameter="2.159" shape="octagon"/>
+<text x="4.445" y="4.445" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.175" y="-3.81" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>
-<package3d name="EB2505" urn="urn:adsk.eagle:package:5275/1" type="box" library_version="1">
+<package3d name="F/QMBIII" urn="urn:adsk.eagle:package:5267/1" type="box" library_version="1">
 <description>BUZZER</description>
 <packageinstances>
-<packageinstance name="EB2505"/>
+<packageinstance name="F/QMBIII"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -7142,19 +6570,19 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="EB2505" urn="urn:adsk.eagle:component:5318/1" prefix="SG" library_version="1">
+<deviceset name="F/QMBIII" urn="urn:adsk.eagle:component:5304/1" prefix="SG" library_version="1">
 <description>&lt;b&gt;BUZZER&lt;/b&gt;&lt;p&gt; Source: Buerklin</description>
 <gates>
 <gate name="G$1" symbol="B" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="EB2505">
+<device name="" package="F/QMBIII">
 <connects>
-<connect gate="G$1" pin="+" pad="+"/>
-<connect gate="G$1" pin="-" pad="-"/>
+<connect gate="G$1" pin="+" pad="-"/>
+<connect gate="G$1" pin="-" pad="+"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:5275/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5267/1"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -7163,6 +6591,646 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="unknown" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="KF301-2P">
+<packages>
+<package name="HANDSON_KF301-2P">
+<wire x1="-5" y1="4" x2="5" y2="4" width="0.127" layer="51"/>
+<wire x1="5" y1="4" x2="5" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="5" y1="-3.5" x2="-5" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="-5" y1="-3.5" x2="-5" y2="4" width="0.127" layer="51"/>
+<wire x1="-5" y1="4" x2="5" y2="4" width="0.127" layer="21"/>
+<wire x1="-5" y1="-3.5" x2="-5" y2="4" width="0.127" layer="21"/>
+<wire x1="5" y1="-3.5" x2="-5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="5" y1="4" x2="5" y2="-3.5" width="0.127" layer="21"/>
+<circle x="-5.6" y="0" radius="0.1" width="0.2" layer="21"/>
+<circle x="-5.6" y="0" radius="0.1" width="0.2" layer="51"/>
+<wire x1="-5.25" y1="4.25" x2="5.25" y2="4.25" width="0.05" layer="39"/>
+<wire x1="5.25" y1="4.25" x2="5.25" y2="-3.75" width="0.05" layer="39"/>
+<wire x1="5.25" y1="-3.75" x2="-5.25" y2="-3.75" width="0.05" layer="39"/>
+<wire x1="-5.25" y1="-3.75" x2="-5.25" y2="4.25" width="0.05" layer="39"/>
+<text x="-5.08" y="4.445" size="1.27" layer="25">&gt;NAME</text>
+<text x="-5.08" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
+<pad name="1" x="-2.5" y="0" drill="1.4" shape="square"/>
+<pad name="2" x="2.5" y="0" drill="1.4"/>
+</package>
+</packages>
+<symbols>
+<symbol name="KF301-2P">
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<text x="-5.08" y="5.842" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-10.16" y="2.54" length="middle" direction="pas"/>
+<pin name="2" x="-10.16" y="-2.54" length="middle" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="KF301-2P" prefix="J">
+<description>2 Pin Terminal Block 5mm Pitch &lt;a href="https://pricing.snapeda.com/parts/KF301-2P/Handson%20Technology/view-part?ref=eda"&gt;Check prices&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="KF301-2P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HANDSON_KF301-2P">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value=""/>
+<attribute name="DESCRIPTION" value=" 2 Pin Terminal Block 5mm Pitch "/>
+<attribute name="MF" value="Handson Technology"/>
+<attribute name="MP" value="KF301-2P"/>
+<attribute name="PACKAGE" value="Package "/>
+<attribute name="PRICE" value="None"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="con pinheader male">
+<description>
+&lt;b&gt;Male pin headers&lt;/b&gt;, pitch 50 mil (1.27 mm), 2.0 mm, 100 mil (2.54 mm)&lt;p&gt;
+
+This libary based on the library &lt;i&gt;con-lstb&lt;/i&gt; and is unified with library &lt;i&gt;con-pinheader female&lt;/i&gt;&lt;br&gt;
+The author do not warrant that this library is free from error or will meet your specific requirements.&lt;p&gt;
+
+original library created by &lt;author&gt;librarian@cadsoft.de&lt;/author&gt;&lt;p&gt;
+update by &lt;author&gt;Kylie&lt;/author&gt;&lt;p&gt;
+
+&lt;b&gt;NOTE:&lt;/b&gt; pad numbering of 2-rows-packages is compatible to  standard IEC 60603-13&lt;p&gt;
+&lt;br&gt;
+
+Updates:&lt;p&gt;
+09.02.2020:&lt;ul&gt;
+&lt;li&gt; packages 50 mil pad pitch/50 mil row distance added
+&lt;li&gt; other series: packages with contact numbers 21...36/42...72 added
+&lt;/ul&gt;&lt;br&gt;
+28.04.2018:&lt;ul&gt;
+&lt;li&gt;packages with 50 mil pad pitch/100mil row distance and 2 mm added
+&lt;/ul&gt;&lt;br&gt;
+20.04.2018:&lt;ul&gt;
+&lt;li&gt;renaming of symbols, packages (100mil) and devices
+&lt;/ul&gt;&lt;br&gt;
+</description>
+<packages>
+<package name="M_1R06_2MM-H">
+<description>
+&lt;b&gt;Pin header&lt;/b&gt;, male, 1 row, pitch 2.0 mml, horizontal (side entry type, angled solder pins)&lt;br&gt;
+square pins 0.5 mm
+</description>
+<pad name="1" x="-5" y="0" drill="0.8" diameter="1.4" shape="square"/>
+<pad name="2" x="-3" y="0" drill="0.8" diameter="1.4"/>
+<pad name="3" x="-1" y="0" drill="0.8" diameter="1.4"/>
+<pad name="4" x="1" y="0" drill="0.8" diameter="1.4"/>
+<pad name="5" x="3" y="0" drill="0.8" diameter="1.4"/>
+<pad name="6" x="5" y="0" drill="0.8" diameter="1.4"/>
+<text x="-6.27" y="1.27" size="1.27" layer="25" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="-5" y="-1.27" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<wire x1="-6" y1="1.5" x2="6" y2="1.5" width="0.1524" layer="21"/>
+<wire x1="6" y1="3" x2="-6" y2="3" width="0.1524" layer="21"/>
+<wire x1="-6" y1="3" x2="-6" y2="1.5" width="0.1524" layer="21"/>
+<wire x1="6" y1="1.5" x2="6" y2="3" width="0.1524" layer="21"/>
+<rectangle x1="-5.25" y1="0.8" x2="-4.75" y2="1.5" layer="21"/>
+<rectangle x1="-3.25" y1="0.8" x2="-2.75" y2="1.5" layer="21"/>
+<rectangle x1="-1.25" y1="0.8" x2="-0.75" y2="1.5" layer="21"/>
+<rectangle x1="0.75" y1="0.8" x2="1.25" y2="1.5" layer="21"/>
+<rectangle x1="2.75" y1="0.8" x2="3.25" y2="1.5" layer="21"/>
+<rectangle x1="4.75" y1="0.8" x2="5.25" y2="1.5" layer="21"/>
+<wire x1="-4" y1="1.5" x2="-4" y2="3" width="0.1524" layer="51"/>
+<wire x1="-5.6" y1="1.5" x2="-5.6" y2="3" width="0.0508" layer="51"/>
+<wire x1="-4.4" y1="1.5" x2="-4.4" y2="3" width="0.0508" layer="51"/>
+<wire x1="-5" y1="7.1" x2="-5" y2="3.81" width="0.5" layer="51"/>
+<wire x1="-2" y1="1.5" x2="-2" y2="3" width="0.1524" layer="51"/>
+<wire x1="-3.6" y1="1.5" x2="-3.6" y2="3" width="0.0508" layer="51"/>
+<wire x1="-2.4" y1="1.5" x2="-2.4" y2="3" width="0.0508" layer="51"/>
+<wire x1="0" y1="1.5" x2="0" y2="3" width="0.1524" layer="51"/>
+<wire x1="-1.6" y1="1.5" x2="-1.6" y2="3" width="0.0508" layer="51"/>
+<wire x1="-0.4" y1="1.5" x2="-0.4" y2="3" width="0.0508" layer="51"/>
+<wire x1="2" y1="1.5" x2="2" y2="3" width="0.1524" layer="51"/>
+<wire x1="0.4" y1="1.5" x2="0.4" y2="3" width="0.0508" layer="51"/>
+<wire x1="1.6" y1="1.5" x2="1.6" y2="3" width="0.0508" layer="51"/>
+<wire x1="4" y1="1.5" x2="4" y2="3" width="0.1524" layer="51"/>
+<wire x1="2.4" y1="1.5" x2="2.4" y2="3" width="0.0508" layer="51"/>
+<wire x1="3.6" y1="1.5" x2="3.6" y2="3" width="0.0508" layer="51"/>
+<wire x1="4.4" y1="1.5" x2="4.4" y2="3" width="0.0508" layer="51"/>
+<wire x1="5.6" y1="1.5" x2="5.6" y2="3" width="0.0508" layer="51"/>
+<wire x1="-3" y1="7.1" x2="-3" y2="3.81" width="0.5" layer="51"/>
+<wire x1="-1" y1="7.1" x2="-1" y2="3.81" width="0.5" layer="51"/>
+<wire x1="1" y1="7.1" x2="1" y2="3.81" width="0.5" layer="51"/>
+<wire x1="3" y1="7.1" x2="3" y2="3.81" width="0.5" layer="51"/>
+<wire x1="5" y1="7.1" x2="5" y2="3.81" width="0.5" layer="51"/>
+<rectangle x1="-5.25" y1="3" x2="-4.75" y2="3.81" layer="51"/>
+<rectangle x1="-5.25" y1="-0.25" x2="-4.75" y2="0.8" layer="51"/>
+<rectangle x1="-3.25" y1="3" x2="-2.75" y2="3.81" layer="51"/>
+<rectangle x1="-3.25" y1="-0.25" x2="-2.75" y2="0.8" layer="51"/>
+<rectangle x1="-1.25" y1="3" x2="-0.75" y2="3.81" layer="51"/>
+<rectangle x1="-1.25" y1="-0.25" x2="-0.75" y2="0.8" layer="51"/>
+<rectangle x1="0.75" y1="3" x2="1.25" y2="3.81" layer="51"/>
+<rectangle x1="0.75" y1="-0.25" x2="1.25" y2="0.8" layer="51"/>
+<rectangle x1="2.75" y1="3" x2="3.25" y2="3.81" layer="51"/>
+<rectangle x1="2.75" y1="-0.25" x2="3.25" y2="0.8" layer="51"/>
+<rectangle x1="4.75" y1="3" x2="5.25" y2="3.81" layer="51"/>
+<rectangle x1="4.75" y1="-0.25" x2="5.25" y2="0.8" layer="51"/>
+</package>
+<package name="M_1R06_2MM-V">
+<description>
+&lt;b&gt;Pin header&lt;/b&gt;, male, 1 row, pitch 2.0 mm, vertical (top entry type, straight solder pins)&lt;br&gt;
+square pins 0.5 mm
+</description>
+<pad name="1" x="-5" y="0" drill="0.8" diameter="1.4" shape="square"/>
+<pad name="2" x="-3" y="0" drill="0.8" diameter="1.4"/>
+<pad name="3" x="-1" y="0" drill="0.8" diameter="1.4"/>
+<pad name="4" x="1" y="0" drill="0.8" diameter="1.4"/>
+<pad name="5" x="3" y="0" drill="0.8" diameter="1.4"/>
+<pad name="6" x="5" y="0" drill="0.8" diameter="1.4"/>
+<text x="-6.27" y="0" size="1.27" layer="25" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="-5" y="-1.27" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<wire x1="-5.6" y1="1" x2="-4.4" y2="1" width="0.1524" layer="21"/>
+<wire x1="-4.4" y1="1" x2="-4" y2="0.6" width="0.1524" layer="21"/>
+<wire x1="-4" y1="-0.6" x2="-4.4" y2="-1" width="0.1524" layer="21"/>
+<wire x1="-6" y1="0.6" x2="-6" y2="-0.6" width="0.1524" layer="21"/>
+<wire x1="-5.6" y1="1" x2="-6" y2="0.6" width="0.1524" layer="21"/>
+<wire x1="-6" y1="-0.6" x2="-5.6" y2="-1" width="0.1524" layer="21"/>
+<wire x1="-4.4" y1="-1" x2="-5.6" y2="-1" width="0.1524" layer="21"/>
+<wire x1="6" y1="0.6" x2="6" y2="-0.6" width="0.1524" layer="21"/>
+<wire x1="-3.6" y1="1" x2="-2.4" y2="1" width="0.1524" layer="21"/>
+<wire x1="-2.4" y1="1" x2="-2" y2="0.6" width="0.1524" layer="21"/>
+<wire x1="-2" y1="-0.6" x2="-2.4" y2="-1" width="0.1524" layer="21"/>
+<wire x1="-3.6" y1="1" x2="-4" y2="0.6" width="0.1524" layer="21"/>
+<wire x1="-4" y1="-0.6" x2="-3.6" y2="-1" width="0.1524" layer="21"/>
+<wire x1="-2.4" y1="-1" x2="-3.6" y2="-1" width="0.1524" layer="21"/>
+<wire x1="-1.6" y1="1" x2="-0.4" y2="1" width="0.1524" layer="21"/>
+<wire x1="-0.4" y1="1" x2="0" y2="0.6" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.6" x2="-0.4" y2="-1" width="0.1524" layer="21"/>
+<wire x1="-1.6" y1="1" x2="-2" y2="0.6" width="0.1524" layer="21"/>
+<wire x1="-2" y1="-0.6" x2="-1.6" y2="-1" width="0.1524" layer="21"/>
+<wire x1="-0.4" y1="-1" x2="-1.6" y2="-1" width="0.1524" layer="21"/>
+<wire x1="0.4" y1="1" x2="1.6" y2="1" width="0.1524" layer="21"/>
+<wire x1="1.6" y1="1" x2="2" y2="0.6" width="0.1524" layer="21"/>
+<wire x1="2" y1="-0.6" x2="1.6" y2="-1" width="0.1524" layer="21"/>
+<wire x1="0.4" y1="1" x2="0" y2="0.6" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.6" x2="0.4" y2="-1" width="0.1524" layer="21"/>
+<wire x1="1.6" y1="-1" x2="0.4" y2="-1" width="0.1524" layer="21"/>
+<wire x1="2.4" y1="1" x2="3.6" y2="1" width="0.1524" layer="21"/>
+<wire x1="3.6" y1="1" x2="4" y2="0.6" width="0.1524" layer="21"/>
+<wire x1="4" y1="-0.6" x2="3.6" y2="-1" width="0.1524" layer="21"/>
+<wire x1="2.4" y1="1" x2="2" y2="0.6" width="0.1524" layer="21"/>
+<wire x1="2" y1="-0.6" x2="2.4" y2="-1" width="0.1524" layer="21"/>
+<wire x1="3.6" y1="-1" x2="2.4" y2="-1" width="0.1524" layer="21"/>
+<wire x1="4.4" y1="1" x2="5.6" y2="1" width="0.1524" layer="21"/>
+<wire x1="5.6" y1="1" x2="6" y2="0.6" width="0.1524" layer="21"/>
+<wire x1="6" y1="-0.6" x2="5.6" y2="-1" width="0.1524" layer="21"/>
+<wire x1="4.4" y1="1" x2="4" y2="0.6" width="0.1524" layer="21"/>
+<wire x1="4" y1="-0.6" x2="4.4" y2="-1" width="0.1524" layer="21"/>
+<wire x1="5.6" y1="-1" x2="4.4" y2="-1" width="0.1524" layer="21"/>
+<wire x1="-4" y1="0.6" x2="-4" y2="-0.6" width="0.1524" layer="51"/>
+<wire x1="-2" y1="0.6" x2="-2" y2="-0.6" width="0.1524" layer="51"/>
+<wire x1="0" y1="0.6" x2="0" y2="-0.6" width="0.1524" layer="51"/>
+<wire x1="2" y1="0.6" x2="2" y2="-0.6" width="0.1524" layer="51"/>
+<wire x1="4" y1="0.6" x2="4" y2="-0.6" width="0.1524" layer="51"/>
+<rectangle x1="-5.25" y1="-0.25" x2="-4.75" y2="0.25" layer="51"/>
+<rectangle x1="-3.25" y1="-0.25" x2="-2.75" y2="0.25" layer="51"/>
+<rectangle x1="-1.25" y1="-0.25" x2="-0.75" y2="0.25" layer="51"/>
+<rectangle x1="0.75" y1="-0.25" x2="1.25" y2="0.25" layer="51"/>
+<rectangle x1="2.75" y1="-0.25" x2="3.25" y2="0.25" layer="51"/>
+<rectangle x1="4.75" y1="-0.25" x2="5.25" y2="0.25" layer="51"/>
+</package>
+<package name="M_1R06_50MIL-H">
+<description>
+&lt;b&gt;Pin header&lt;/b&gt;, male, 1 row, pitch 50 mil, horizontal (side entry type, angled solder pins)&lt;br&gt;
+square pins 0.4 mm
+</description>
+<pad name="1" x="-3.175" y="0" drill="0.6" diameter="1.05" shape="square"/>
+<pad name="2" x="-1.905" y="0" drill="0.6" diameter="1.05"/>
+<pad name="3" x="-0.635" y="0" drill="0.6" diameter="1.05"/>
+<pad name="4" x="0.635" y="0" drill="0.6" diameter="1.05"/>
+<pad name="5" x="1.905" y="0" drill="0.6" diameter="1.05"/>
+<pad name="6" x="3.175" y="0" drill="0.6" diameter="1.05"/>
+<text x="-4.445" y="1.27" size="1.27" layer="25" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="-3.175" y="-1.27" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<wire x1="-3.81" y1="1.5" x2="3.81" y2="1.5" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="3.2" x2="-3.81" y2="3.2" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="3.2" x2="-3.81" y2="1.5" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="1.5" x2="3.81" y2="3.2" width="0.1524" layer="21"/>
+<rectangle x1="-3.375" y1="0.6" x2="-2.975" y2="1.5" layer="21"/>
+<rectangle x1="-2.105" y1="0.6" x2="-1.705" y2="1.5" layer="21"/>
+<rectangle x1="-0.835" y1="0.6" x2="-0.435" y2="1.5" layer="21"/>
+<rectangle x1="0.435" y1="0.6" x2="0.835" y2="1.5" layer="21"/>
+<rectangle x1="1.705" y1="0.6" x2="2.105" y2="1.5" layer="21"/>
+<rectangle x1="2.975" y1="0.6" x2="3.375" y2="1.5" layer="21"/>
+<wire x1="-2.54" y1="1.5" x2="-2.54" y2="3.2" width="0.1524" layer="51"/>
+<wire x1="-3.556" y1="1.5" x2="-3.556" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="-2.794" y1="1.5" x2="-2.794" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="-1.27" y1="1.5" x2="-1.27" y2="3.2" width="0.1524" layer="51"/>
+<wire x1="-2.286" y1="1.5" x2="-2.286" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="-1.524" y1="1.5" x2="-1.524" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="0" y1="1.5" x2="0" y2="3.2" width="0.1524" layer="51"/>
+<wire x1="-1.016" y1="1.5" x2="-1.016" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="-0.254" y1="1.5" x2="-0.254" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="1.27" y1="1.5" x2="1.27" y2="3.2" width="0.1524" layer="51"/>
+<wire x1="0.254" y1="1.5" x2="0.254" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="1.016" y1="1.5" x2="1.016" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="2.54" y1="1.5" x2="2.54" y2="3.2" width="0.1524" layer="51"/>
+<wire x1="1.524" y1="1.5" x2="1.524" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="2.286" y1="1.5" x2="2.286" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="2.794" y1="1.5" x2="2.794" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="3.556" y1="1.5" x2="3.556" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="-3.175" y1="6.2" x2="-3.175" y2="3.81" width="0.4" layer="51"/>
+<wire x1="-1.905" y1="6.2" x2="-1.905" y2="3.81" width="0.4" layer="51"/>
+<wire x1="-0.635" y1="6.2" x2="-0.635" y2="3.81" width="0.4" layer="51"/>
+<wire x1="0.635" y1="6.2" x2="0.635" y2="3.81" width="0.4" layer="51"/>
+<wire x1="1.905" y1="6.2" x2="1.905" y2="3.81" width="0.4" layer="51"/>
+<wire x1="3.175" y1="6.2" x2="3.175" y2="3.81" width="0.4" layer="51"/>
+<rectangle x1="-3.375" y1="3.2" x2="-2.975" y2="3.81" layer="51"/>
+<rectangle x1="-3.375" y1="-0.2" x2="-2.975" y2="0.6" layer="51"/>
+<rectangle x1="-2.105" y1="3.2" x2="-1.705" y2="3.81" layer="51"/>
+<rectangle x1="-2.105" y1="-0.2" x2="-1.705" y2="0.6" layer="51"/>
+<rectangle x1="-0.835" y1="3.2" x2="-0.435" y2="3.81" layer="51"/>
+<rectangle x1="-0.835" y1="-0.2" x2="-0.435" y2="0.6" layer="51"/>
+<rectangle x1="0.435" y1="3.2" x2="0.835" y2="3.81" layer="51"/>
+<rectangle x1="0.435" y1="-0.2" x2="0.835" y2="0.6" layer="51"/>
+<rectangle x1="1.705" y1="3.2" x2="2.105" y2="3.81" layer="51"/>
+<rectangle x1="1.705" y1="-0.2" x2="2.105" y2="0.6" layer="51"/>
+<rectangle x1="2.975" y1="3.2" x2="3.375" y2="3.81" layer="51"/>
+<rectangle x1="2.975" y1="-0.2" x2="3.375" y2="0.6" layer="51"/>
+</package>
+<package name="M_1R06_50MIL-V">
+<description>
+&lt;b&gt;Pin header&lt;/b&gt;, male, 1 row, pitch 50 mil, vertical (top entry type, straight solder pins)&lt;br&gt;
+square pins 0.4 mm
+</description>
+<pad name="1" x="-3.175" y="0" drill="0.6" diameter="1.05" shape="square"/>
+<pad name="2" x="-1.905" y="0" drill="0.6" diameter="1.05"/>
+<pad name="3" x="-0.635" y="0" drill="0.6" diameter="1.05"/>
+<pad name="4" x="0.635" y="0" drill="0.6" diameter="1.05"/>
+<pad name="5" x="1.905" y="0" drill="0.6" diameter="1.05"/>
+<pad name="6" x="3.175" y="0" drill="0.6" diameter="1.05"/>
+<text x="-4.445" y="0" size="1.27" layer="25" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="-3.175" y="-1.905" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<wire x1="-3.556" y1="1.25" x2="-2.794" y2="1.25" width="0.1524" layer="21"/>
+<wire x1="-2.794" y1="1.25" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-2.794" y2="-1.25" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="0.635" x2="-3.81" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-3.556" y1="1.25" x2="-3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-0.635" x2="-3.556" y2="-1.25" width="0.1524" layer="21"/>
+<wire x1="-2.794" y1="-1.25" x2="-3.556" y2="-1.25" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-2.286" y1="1.25" x2="-1.524" y2="1.25" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="1.25" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.524" y2="-1.25" width="0.1524" layer="21"/>
+<wire x1="-2.286" y1="1.25" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-2.286" y2="-1.25" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="-1.25" x2="-2.286" y2="-1.25" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="1.25" x2="-0.254" y2="1.25" width="0.1524" layer="21"/>
+<wire x1="-0.254" y1="1.25" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.254" y2="-1.25" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="1.25" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.016" y2="-1.25" width="0.1524" layer="21"/>
+<wire x1="-0.254" y1="-1.25" x2="-1.016" y2="-1.25" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="1.25" x2="1.016" y2="1.25" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="1.25" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="1.016" y2="-1.25" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="1.25" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="0.254" y2="-1.25" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-1.25" x2="0.254" y2="-1.25" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="1.25" x2="2.286" y2="1.25" width="0.1524" layer="21"/>
+<wire x1="2.286" y1="1.25" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="2.286" y2="-1.25" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="1.25" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="1.524" y2="-1.25" width="0.1524" layer="21"/>
+<wire x1="2.286" y1="-1.25" x2="1.524" y2="-1.25" width="0.1524" layer="21"/>
+<wire x1="2.794" y1="1.25" x2="3.556" y2="1.25" width="0.1524" layer="21"/>
+<wire x1="3.556" y1="1.25" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.556" y2="-1.25" width="0.1524" layer="21"/>
+<wire x1="2.794" y1="1.25" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="2.794" y2="-1.25" width="0.1524" layer="21"/>
+<wire x1="3.556" y1="-1.25" x2="2.794" y2="-1.25" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="51"/>
+<rectangle x1="-3.375" y1="-0.2" x2="-2.975" y2="0.2" layer="51"/>
+<rectangle x1="-2.105" y1="-0.2" x2="-1.705" y2="0.2" layer="51"/>
+<rectangle x1="-0.835" y1="-0.2" x2="-0.435" y2="0.2" layer="51"/>
+<rectangle x1="0.435" y1="-0.2" x2="0.835" y2="0.2" layer="51"/>
+<rectangle x1="1.705" y1="-0.2" x2="2.105" y2="0.2" layer="51"/>
+<rectangle x1="2.975" y1="-0.2" x2="3.375" y2="0.2" layer="51"/>
+</package>
+<package name="M_1R06_100MIL-H1">
+<description>
+&lt;b&gt;Pin header&lt;/b&gt;, male, 1 row, pitch 100mil, horizontal (side entry type, angled solder pins)&lt;br&gt;
+square pins 25 mil / 0.635 mm
+</description>
+<pad name="1" x="-6.35" y="0" drill="1" diameter="1.6" shape="square"/>
+<pad name="2" x="-3.81" y="0" drill="1" diameter="1.6"/>
+<pad name="3" x="-1.27" y="0" drill="1" diameter="1.6"/>
+<pad name="4" x="1.27" y="0" drill="1" diameter="1.6"/>
+<pad name="5" x="3.81" y="0" drill="1" diameter="1.6"/>
+<pad name="6" x="6.35" y="0" drill="1" diameter="1.6"/>
+<text x="-8.255" y="1.27" size="1.27" layer="25" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="-6.35" y="-1.27" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<wire x1="-7.62" y1="1.5" x2="7.62" y2="1.5" width="0.1524" layer="21"/>
+<wire x1="7.62" y1="4.3" x2="-7.62" y2="4.3" width="0.1524" layer="21"/>
+<wire x1="-7.62" y1="4.3" x2="-7.62" y2="1.5" width="0.1524" layer="21"/>
+<wire x1="7.62" y1="1.5" x2="7.62" y2="4.3" width="0.1524" layer="21"/>
+<rectangle x1="-6.6675" y1="0.93" x2="-6.0325" y2="1.5" layer="21"/>
+<rectangle x1="-4.1275" y1="0.93" x2="-3.4925" y2="1.5" layer="21"/>
+<rectangle x1="-1.5875" y1="0.93" x2="-0.9525" y2="1.5" layer="21"/>
+<rectangle x1="0.9525" y1="0.93" x2="1.5875" y2="1.5" layer="21"/>
+<rectangle x1="3.4925" y1="0.93" x2="4.1275" y2="1.5" layer="21"/>
+<rectangle x1="6.0325" y1="0.93" x2="6.6675" y2="1.5" layer="21"/>
+<wire x1="-5.08" y1="1.5" x2="-5.08" y2="4.3" width="0.1524" layer="51"/>
+<wire x1="-7.239" y1="1.5" x2="-7.239" y2="4.3" width="0.0508" layer="51"/>
+<wire x1="-5.461" y1="1.5" x2="-5.461" y2="4.3" width="0.0508" layer="51"/>
+<wire x1="-2.54" y1="1.5" x2="-2.54" y2="4.3" width="0.1524" layer="51"/>
+<wire x1="-4.699" y1="1.5" x2="-4.699" y2="4.3" width="0.0508" layer="51"/>
+<wire x1="-2.921" y1="1.5" x2="-2.921" y2="4.3" width="0.0508" layer="51"/>
+<wire x1="0" y1="1.5" x2="0" y2="4.3" width="0.1524" layer="51"/>
+<wire x1="-2.159" y1="1.5" x2="-2.159" y2="4.3" width="0.0508" layer="51"/>
+<wire x1="-0.381" y1="1.5" x2="-0.381" y2="4.3" width="0.0508" layer="51"/>
+<wire x1="2.54" y1="1.5" x2="2.54" y2="4.3" width="0.1524" layer="51"/>
+<wire x1="0.381" y1="1.5" x2="0.381" y2="4.3" width="0.0508" layer="51"/>
+<wire x1="2.159" y1="1.5" x2="2.159" y2="4.3" width="0.0508" layer="51"/>
+<wire x1="5.08" y1="1.5" x2="5.08" y2="4.3" width="0.1524" layer="51"/>
+<wire x1="2.921" y1="1.5" x2="2.921" y2="4.3" width="0.0508" layer="51"/>
+<wire x1="4.699" y1="1.5" x2="4.699" y2="4.3" width="0.0508" layer="51"/>
+<wire x1="5.461" y1="1.5" x2="5.461" y2="4.3" width="0.0508" layer="51"/>
+<wire x1="7.239" y1="1.5" x2="7.239" y2="4.3" width="0.0508" layer="51"/>
+<wire x1="-6.35" y1="10.1" x2="-6.35" y2="5.08" width="0.635" layer="51"/>
+<wire x1="-3.81" y1="10.1" x2="-3.81" y2="5.08" width="0.635" layer="51"/>
+<wire x1="-1.27" y1="10.1" x2="-1.27" y2="5.08" width="0.635" layer="51"/>
+<wire x1="1.27" y1="10.1" x2="1.27" y2="5.08" width="0.635" layer="51"/>
+<wire x1="3.81" y1="10.1" x2="3.81" y2="5.08" width="0.635" layer="51"/>
+<wire x1="6.35" y1="10.1" x2="6.35" y2="5.08" width="0.635" layer="51"/>
+<rectangle x1="-6.6675" y1="4.3" x2="-6.0325" y2="5.08" layer="51"/>
+<rectangle x1="-4.1275" y1="4.3" x2="-3.4925" y2="5.08" layer="51"/>
+<rectangle x1="-1.5875" y1="4.3" x2="-0.9525" y2="5.08" layer="51"/>
+<rectangle x1="0.9525" y1="4.3" x2="1.5875" y2="5.08" layer="51"/>
+<rectangle x1="3.4925" y1="4.3" x2="4.1275" y2="5.08" layer="51"/>
+<rectangle x1="6.0325" y1="4.3" x2="6.6675" y2="5.08" layer="51"/>
+<rectangle x1="-6.6675" y1="-0.3175" x2="-6.0325" y2="0.93" layer="51"/>
+<rectangle x1="-4.1275" y1="-0.3175" x2="-3.4925" y2="0.93" layer="51"/>
+<rectangle x1="-1.5875" y1="-0.3175" x2="-0.9525" y2="0.93" layer="51"/>
+<rectangle x1="0.9525" y1="-0.3175" x2="1.5875" y2="0.93" layer="51"/>
+<rectangle x1="3.4925" y1="-0.3175" x2="4.1275" y2="0.93" layer="51"/>
+<rectangle x1="6.0325" y1="-0.3175" x2="6.6675" y2="0.93" layer="51"/>
+</package>
+<package name="M_1R06_100MIL-H2">
+<description>
+&lt;b&gt;Pin header&lt;/b&gt;, male low-profile, 1 row, pitch 100mil, horizontal (side entry type, angled solder pins)&lt;br&gt;
+square pins 25 mil / 0.635 mm
+</description>
+<pad name="1" x="-6.35" y="0" drill="1" diameter="1.6" shape="square"/>
+<pad name="2" x="-3.81" y="0" drill="1" diameter="1.6"/>
+<pad name="3" x="-1.27" y="0" drill="1" diameter="1.6"/>
+<pad name="4" x="1.27" y="0" drill="1" diameter="1.6"/>
+<pad name="5" x="3.81" y="0" drill="1" diameter="1.6"/>
+<pad name="6" x="6.35" y="0" drill="1" diameter="1.6"/>
+<text x="-8.255" y="1.27" size="1.27" layer="25" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="-6.35" y="-1.27" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<wire x1="-7.62" y1="1.5" x2="7.62" y2="1.5" width="0.1524" layer="21"/>
+<wire x1="7.62" y1="3.2" x2="-7.62" y2="3.2" width="0.1524" layer="21"/>
+<wire x1="-7.62" y1="3.2" x2="-7.62" y2="1.5" width="0.1524" layer="21"/>
+<wire x1="7.62" y1="1.5" x2="7.62" y2="3.2" width="0.1524" layer="21"/>
+<rectangle x1="-6.6675" y1="0.93" x2="-6.0325" y2="1.5" layer="21"/>
+<rectangle x1="-4.1275" y1="0.93" x2="-3.4925" y2="1.5" layer="21"/>
+<rectangle x1="-1.5875" y1="0.93" x2="-0.9525" y2="1.5" layer="21"/>
+<rectangle x1="0.9525" y1="0.93" x2="1.5875" y2="1.5" layer="21"/>
+<rectangle x1="3.4925" y1="0.93" x2="4.1275" y2="1.5" layer="21"/>
+<rectangle x1="6.0325" y1="0.93" x2="6.6675" y2="1.5" layer="21"/>
+<wire x1="-5.08" y1="1.5" x2="-5.08" y2="3.2" width="0.1524" layer="51"/>
+<wire x1="-7.239" y1="1.5" x2="-7.239" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="-5.461" y1="1.5" x2="-5.461" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="-2.54" y1="1.5" x2="-2.54" y2="3.2" width="0.1524" layer="51"/>
+<wire x1="-4.699" y1="1.5" x2="-4.699" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="-2.921" y1="1.5" x2="-2.921" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="0" y1="1.5" x2="0" y2="3.2" width="0.1524" layer="51"/>
+<wire x1="-2.159" y1="1.5" x2="-2.159" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="-0.381" y1="1.5" x2="-0.381" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="2.54" y1="1.5" x2="2.54" y2="3.2" width="0.1524" layer="51"/>
+<wire x1="0.381" y1="1.5" x2="0.381" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="2.159" y1="1.5" x2="2.159" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="5.08" y1="1.5" x2="5.08" y2="3.2" width="0.1524" layer="51"/>
+<wire x1="2.921" y1="1.5" x2="2.921" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="4.699" y1="1.5" x2="4.699" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="5.461" y1="1.5" x2="5.461" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="7.239" y1="1.5" x2="7.239" y2="3.2" width="0.0508" layer="51"/>
+<wire x1="-6.35" y1="7.3" x2="-6.35" y2="3.81" width="0.635" layer="51"/>
+<wire x1="-3.81" y1="7.3" x2="-3.81" y2="3.81" width="0.635" layer="51"/>
+<wire x1="-1.27" y1="7.3" x2="-1.27" y2="3.81" width="0.635" layer="51"/>
+<wire x1="1.27" y1="7.3" x2="1.27" y2="3.81" width="0.635" layer="51"/>
+<wire x1="3.81" y1="7.3" x2="3.81" y2="3.81" width="0.635" layer="51"/>
+<wire x1="6.35" y1="7.3" x2="6.35" y2="3.81" width="0.635" layer="51"/>
+<rectangle x1="-6.6675" y1="3.2" x2="-6.0325" y2="3.81" layer="51"/>
+<rectangle x1="-4.1275" y1="3.2" x2="-3.4925" y2="3.81" layer="51"/>
+<rectangle x1="-1.5875" y1="3.2" x2="-0.9525" y2="3.81" layer="51"/>
+<rectangle x1="0.9525" y1="3.2" x2="1.5875" y2="3.81" layer="51"/>
+<rectangle x1="3.4925" y1="3.2" x2="4.1275" y2="3.81" layer="51"/>
+<rectangle x1="6.0325" y1="3.2" x2="6.6675" y2="3.81" layer="51"/>
+<rectangle x1="-6.6675" y1="-0.3175" x2="-6.0325" y2="0.93" layer="51"/>
+<rectangle x1="-4.1275" y1="-0.3175" x2="-3.4925" y2="0.93" layer="51"/>
+<rectangle x1="-1.5875" y1="-0.3175" x2="-0.9525" y2="0.93" layer="51"/>
+<rectangle x1="0.9525" y1="-0.3175" x2="1.5875" y2="0.93" layer="51"/>
+<rectangle x1="3.4925" y1="-0.3175" x2="4.1275" y2="0.93" layer="51"/>
+<rectangle x1="6.0325" y1="-0.3175" x2="6.6675" y2="0.93" layer="51"/>
+</package>
+<package name="M_1R06_100MIL-V">
+<description>
+&lt;b&gt;Pin header&lt;/b&gt;, male, 1 row, pitch 100mil, vertical (top entry type, straight solder pins)&lt;br&gt;
+square pins 25 mil / 0.635 mm
+</description>
+<pad name="1" x="-6.35" y="0" drill="1" diameter="1.6" shape="square"/>
+<pad name="2" x="-3.81" y="0" drill="1" diameter="1.6"/>
+<pad name="3" x="-1.27" y="0" drill="1" diameter="1.6"/>
+<pad name="4" x="1.27" y="0" drill="1" diameter="1.6"/>
+<pad name="5" x="3.81" y="0" drill="1" diameter="1.6"/>
+<pad name="6" x="6.35" y="0" drill="1" diameter="1.6"/>
+<text x="-8.255" y="0" size="1.27" layer="25" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="-6.35" y="-1.905" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<wire x1="5.08" y1="0.635" x2="5.715" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.985" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="6.985" y1="1.27" x2="7.62" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="7.62" y1="-0.635" x2="6.985" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="6.985" y1="-1.27" x2="5.715" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="5.08" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="3.175" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.08" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-0.635" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-6.985" y1="1.27" x2="-5.715" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="1.27" x2="-5.08" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-0.635" x2="-5.715" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="0.635" x2="-4.445" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="1.27" x2="-3.175" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="-1.27" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="-1.27" x2="-5.08" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-7.62" y1="0.635" x2="-7.62" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-6.985" y1="1.27" x2="-7.62" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-7.62" y1="-0.635" x2="-6.985" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="-1.27" x2="-6.985" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="7.62" y1="0.635" x2="7.62" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="5.08" y1="0.635" x2="5.08" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-5.08" y1="0.635" x2="-5.08" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="51"/>
+<rectangle x1="-6.6675" y1="-0.3175" x2="-6.0325" y2="0.3175" layer="51"/>
+<rectangle x1="-4.1275" y1="-0.3175" x2="-3.4925" y2="0.3175" layer="51"/>
+<rectangle x1="-1.5875" y1="-0.3175" x2="-0.9525" y2="0.3175" layer="51"/>
+<rectangle x1="0.9525" y1="-0.3175" x2="1.5875" y2="0.3175" layer="51"/>
+<rectangle x1="3.4925" y1="-0.3175" x2="4.1275" y2="0.3175" layer="51"/>
+<rectangle x1="6.0325" y1="-0.3175" x2="6.6675" y2="0.3175" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="M_1R06">
+<pin name="1" x="7.62" y="-7.62" visible="pad" length="middle" swaplevel="1" rot="R180"/>
+<pin name="2" x="7.62" y="-5.08" visible="pad" length="middle" swaplevel="1" rot="R180"/>
+<pin name="3" x="7.62" y="-2.54" visible="pad" length="middle" swaplevel="1" rot="R180"/>
+<pin name="4" x="7.62" y="0" visible="pad" length="middle" swaplevel="1" rot="R180"/>
+<pin name="5" x="7.62" y="2.54" visible="pad" length="middle" swaplevel="1" rot="R180"/>
+<pin name="6" x="7.62" y="5.08" visible="pad" length="middle" swaplevel="1" rot="R180"/>
+<text x="-1.27" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-1.27" y="8.382" size="1.778" layer="95">&gt;NAME</text>
+<wire x1="3.81" y1="-10.16" x2="-1.27" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="2.54" y2="-5.08" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-7.62" x2="2.54" y2="-7.62" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="2.54" y2="5.08" width="0.6096" layer="94"/>
+<wire x1="-1.27" y1="7.62" x2="-1.27" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="-10.16" x2="3.81" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="7.62" x2="3.81" y2="7.62" width="0.4064" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="M_1R06" prefix="X" uservalue="yes">
+<description>
+&lt;b&gt;Pin header&lt;/b&gt;, male, 1 row
+</description>
+<gates>
+<gate name="G$1" symbol="M_1R06" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_2MM-H" package="M_1R06_2MM-H">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_2MM-V" package="M_1R06_2MM-V">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_50MIL-H" package="M_1R06_50MIL-H">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_50MIL-V" package="M_1R06_50MIL-V">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_100MIL-H1" package="M_1R06_100MIL-H1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_100MIL-H2" package="M_1R06_100MIL-H2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_100MIL-V" package="M_1R06_100MIL-V">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -7179,40 +7247,44 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </class>
 </classes>
 <parts>
-<part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="PIC_ICSP_MINI_5_PIN" device="" package3d_urn="urn:adsk.eagle:package:38219/1"/>
-<part name="U$1" library="PIC16F84A-04_P" deviceset="PIC16F84A-04/P" device=""/>
+<part name="U1" library="PIC16F84A-04_P" deviceset="PIC16F84A-04/P" device="" override_package3d_urn="urn:adsk.eagle:package:30703195/2" override_package_urn="urn:adsk.eagle:footprint:30703197/1"/>
 <part name="GND1" library="audio amplifier example" library_urn="urn:adsk.eagle:library:970892" deviceset="GND" device="" value="SUP"/>
 <part name="GND2" library="audio amplifier example" library_urn="urn:adsk.eagle:library:970892" deviceset="GND" device="" value="SUP"/>
-<part name="XTAL" library="crystal" library_urn="urn:adsk.eagle:library:204" deviceset="CRYSTAL" device="HC49S" package3d_urn="urn:adsk.eagle:package:12071/1" value="4MHz"/>
-<part name="C1" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="47PF" device="-0603-50V-5%" package3d_urn="urn:adsk.eagle:package:37414/1" value="47pF"/>
-<part name="C2" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="47PF" device="-0603-50V-5%" package3d_urn="urn:adsk.eagle:package:37414/1" value="47pF"/>
+<part name="XTAL" library="crystal" library_urn="urn:adsk.eagle:library:204" deviceset="CRYSTAL" device="HC49S" package3d_urn="urn:adsk.eagle:package:12071/1" override_package3d_urn="urn:adsk.eagle:package:30703332/3" override_package_urn="urn:adsk.eagle:footprint:11992/1" value="4MHz"/>
+<part name="C1" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="22PF" device="-PTH-2.54MM-200V-5%" package3d_urn="urn:adsk.eagle:package:37435/1" override_package3d_urn="urn:adsk.eagle:package:30703243/2" override_package_urn="urn:adsk.eagle:footprint:37402/1" value="47pF"/>
+<part name="C2" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="22PF" device="-PTH-2.54MM-200V-5%" package3d_urn="urn:adsk.eagle:package:37435/1" override_package3d_urn="urn:adsk.eagle:package:30703294/2" override_package_urn="urn:adsk.eagle:footprint:37402/1" value="47pF"/>
 <part name="GND3" library="audio amplifier example" library_urn="urn:adsk.eagle:library:970892" deviceset="GND" device="" value="SUP"/>
-<part name="LED" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="RGBLED_CA" device="-5MM" package3d_urn="urn:adsk.eagle:package:6240652/1"/>
+<part name="LED" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="RGBLED_CA" device="-5MM" package3d_urn="urn:adsk.eagle:package:6240652/1" override_package3d_urn="urn:adsk.eagle:package:30703364/4" override_package_urn="urn:adsk.eagle:footprint:6240006/1"/>
 <part name="P+2" library="audio amplifier example" library_urn="urn:adsk.eagle:library:970892" deviceset="VCC" device=""/>
 <part name="P+1" library="audio amplifier example" library_urn="urn:adsk.eagle:library:970892" deviceset="VCC" device=""/>
 <part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="470"/>
 <part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="10k"/>
-<part name="S1" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" deviceset="MOMENTARY-SWITCH-SPST" device="-PTH-6.0MM" package3d_urn="urn:adsk.eagle:package:40163/1"/>
 <part name="GND5" library="audio amplifier example" library_urn="urn:adsk.eagle:library:970892" deviceset="GND" device="" value="SUP"/>
 <part name="P+3" library="audio amplifier example" library_urn="urn:adsk.eagle:library:970892" deviceset="VCC" device=""/>
-<part name="BUZZER" library="buzzer" library_urn="urn:adsk.eagle:library:113" deviceset="EB2505" device="" package3d_urn="urn:adsk.eagle:package:5275/1"/>
+<part name="BUZZER" library="buzzer" library_urn="urn:adsk.eagle:library:113" deviceset="F/QMBIII" device="" package3d_urn="urn:adsk.eagle:package:5267/1" override_package3d_urn="urn:adsk.eagle:package:30703211/3" override_package_urn="urn:adsk.eagle:footprint:5227/1"/>
 <part name="GND6" library="audio amplifier example" library_urn="urn:adsk.eagle:library:970892" deviceset="GND" device="" value="SUP"/>
 <part name="P+4" library="audio amplifier example" library_urn="urn:adsk.eagle:library:970892" deviceset="VCC" device=""/>
 <part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="10k"/>
+<part name="J2" library="KF301-2P" deviceset="KF301-2P" device="" override_package3d_urn="urn:adsk.eagle:package:30703302/3" override_package_urn="urn:adsk.eagle:footprint:30703307/1"/>
+<part name="P+5" library="audio amplifier example" library_urn="urn:adsk.eagle:library:970892" deviceset="VCC" device=""/>
+<part name="GND4" library="audio amplifier example" library_urn="urn:adsk.eagle:library:970892" deviceset="GND" device="" value="SUP"/>
+<part name="S2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="40-XX" device="-ROUND" package3d_urn="urn:adsk.eagle:package:6240926/1" override_package3d_urn="urn:adsk.eagle:package:30703229/2" override_package_urn="urn:adsk.eagle:footprint:6240283/1" value="PUSH BUTTON"/>
+<part name="J1" library="con pinheader male" deviceset="M_1R06" device="_100MIL-V" override_package3d_urn="urn:adsk.eagle:package:30703956/2" override_package_urn="urn:adsk.eagle:footprint:30703957/1" value="ICSP PICKit3"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="124.5108" y="45.72" size="1.27" layer="91">ICSP pin6 N.C.</text>
+<text x="132.1308" y="48.26" size="1.016" layer="91">PGM (LVP) [N.C.]</text>
 <text x="15.24" y="93.345" size="1.778" layer="91">SIMPLE POMODORO
 V 1.0</text>
+<text x="132.1308" y="50.8" size="1.016" layer="91">PGC (ICSPCLK)</text>
+<text x="132.1308" y="53.34" size="1.016" layer="91">PGD (ISCPDAT)</text>
+<text x="132.1308" y="55.88" size="1.016" layer="91">VSS (GND)</text>
+<text x="132.1308" y="58.42" size="1.016" layer="91">VDD (Target)</text>
+<text x="132.1308" y="60.96" size="1.016" layer="91">VPP / !MCLR</text>
 </plain>
 <instances>
-<instance part="J1" gate="G$1" x="129.5908" y="55.88" smashed="yes">
-<attribute name="NAME" x="127.0508" y="63.754" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="136.652" y="62.8142" size="1.016" layer="96" font="vector" rot="R270" align="top-left"/>
-</instance>
-<instance part="U$1" gate="A" x="53.34" y="66.04" smashed="yes">
+<instance part="U1" gate="A" x="53.34" y="66.04" smashed="yes">
 <attribute name="NAME" x="51.3588" y="77.978" size="2.0828" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="42.3926" y="44.831" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 </instance>
@@ -7248,10 +7320,6 @@ V 1.0</text>
 <attribute name="NAME" x="116.205" y="21.8186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="120.015" y="21.082" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="S1" gate="G$1" x="107.315" y="29.845" smashed="yes">
-<attribute name="NAME" x="107.315" y="26.924" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="104.775" y="26.797" size="0.762" layer="96" font="vector" align="top-center" display="off"/>
-</instance>
 <instance part="GND5" gate="G$1" x="100.33" y="12.065" smashed="yes"/>
 <instance part="P+3" gate="VCC" x="114.3" y="9.525" smashed="yes" rot="R180">
 <attribute name="VALUE" x="112.141" y="7.366" size="1.27" layer="96"/>
@@ -7268,21 +7336,38 @@ V 1.0</text>
 <attribute name="NAME" x="110.49" y="68.8086" size="1.778" layer="95"/>
 <attribute name="VALUE" x="110.49" y="66.548" size="1.778" layer="96"/>
 </instance>
+<instance part="J2" gate="G$1" x="25.4" y="22.86" smashed="yes" rot="R180">
+<attribute name="NAME" x="30.48" y="17.018" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="30.48" y="30.48" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="P+5" gate="VCC" x="40.5384" y="32.8168" smashed="yes">
+<attribute name="VALUE" x="39.0144" y="33.8328" size="1.27" layer="96"/>
+</instance>
+<instance part="GND4" gate="G$1" x="40.64" y="15.24" smashed="yes"/>
+<instance part="S2" gate="1" x="106.68" y="29.845" smashed="yes" rot="R270">
+<attribute name="NAME" x="101.6" y="38.735" size="1.778" layer="95"/>
+<attribute name="VALUE" x="99.695" y="36.195" size="1.27" layer="96"/>
+</instance>
+<instance part="J1" gate="G$1" x="132.08" y="53.34" smashed="yes" rot="R180">
+<attribute name="VALUE" x="133.35" y="66.04" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="133.35" y="44.958" size="1.778" layer="95" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="GND"/>
-<wire x1="121.9708" y1="55.88" x2="118.7958" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="121.9708" y1="55.88" x2="124.46" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="55.88" x2="118.7958" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="118.7958" y1="55.88" x2="118.7958" y2="48.895" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="G$1" pin="GND"/>
+<pinref part="J1" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="G$1" pin="GND"/>
 <wire x1="20.32" y1="43.18" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="A" pin="VSS"/>
+<pinref part="U1" gate="A" pin="VSS"/>
 <wire x1="20.32" y1="48.26" x2="27.94" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -7302,10 +7387,20 @@ V 1.0</text>
 <junction x="83.82" y="13.97"/>
 </segment>
 <segment>
-<pinref part="S1" gate="G$1" pin="1"/>
-<wire x1="102.235" y1="29.845" x2="100.33" y2="29.845" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="G$1" pin="GND"/>
-<wire x1="100.33" y1="29.845" x2="100.33" y2="12.065" width="0.1524" layer="91"/>
+<wire x1="100.33" y1="29.845" x2="100.33" y2="27.305" width="0.1524" layer="91"/>
+<wire x1="100.33" y1="27.305" x2="100.33" y2="12.065" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="29.845" x2="100.33" y2="29.845" width="0.1524" layer="91"/>
+<pinref part="S2" gate="1" pin="P"/>
+<pinref part="S2" gate="1" pin="P1"/>
+<wire x1="101.6" y1="27.305" x2="100.33" y2="27.305" width="0.1524" layer="91"/>
+<junction x="100.33" y="27.305"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="20.32" x2="40.64" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="GND4" gate="G$1" pin="GND"/>
+<wire x1="40.64" y1="20.32" x2="40.64" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="XT2" class="0">
@@ -7319,7 +7414,7 @@ V 1.0</text>
 <wire x1="88.265" y1="27.305" x2="88.265" y2="36.195" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="A" pin="OSC2/CLKOUT"/>
+<pinref part="U1" gate="A" pin="OSC2/CLKOUT"/>
 <wire x1="78.74" y1="76.2" x2="80.645" y2="76.2" width="0.1524" layer="91"/>
 <label x="80.645" y="76.2" size="1.016" layer="95" xref="yes"/>
 </segment>
@@ -7335,23 +7430,24 @@ V 1.0</text>
 <wire x1="78.105" y1="27.305" x2="78.105" y2="36.195" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="A" pin="OSC1/CLKIN"/>
+<pinref part="U1" gate="A" pin="OSC1/CLKIN"/>
 <wire x1="27.94" y1="71.12" x2="25.2984" y2="71.12" width="0.1524" layer="91"/>
 <label x="25.1968" y="71.2216" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MCLR" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="VPP"/>
-<wire x1="121.9708" y1="60.96" x2="106.045" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="121.9708" y1="60.96" x2="124.46" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="124.46" y1="60.96" x2="106.045" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="106.045" y1="60.96" x2="104.902" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="107.315" y1="64.77" x2="106.045" y2="64.77" width="0.1524" layer="91"/>
 <wire x1="106.045" y1="64.77" x2="106.045" y2="60.96" width="0.1524" layer="91"/>
 <junction x="106.045" y="60.96"/>
+<pinref part="J1" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="A" pin="~MCLR"/>
+<pinref part="U1" gate="A" pin="~MCLR"/>
 <wire x1="27.94" y1="68.58" x2="25.2984" y2="68.58" width="0.1524" layer="91"/>
 <label x="25.2222" y="68.58" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -7361,7 +7457,7 @@ V 1.0</text>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U$1" gate="A" pin="RB1"/>
+<pinref part="U1" gate="A" pin="RB1"/>
 <wire x1="78.74" y1="68.58" x2="88.9" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="68.58" x2="88.9" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="LED" gate="G$1" pin="RED"/>
@@ -7370,7 +7466,7 @@ V 1.0</text>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U$1" gate="A" pin="RB2"/>
+<pinref part="U1" gate="A" pin="RB2"/>
 <wire x1="78.74" y1="66.04" x2="92.71" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="92.71" y1="66.04" x2="92.71" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="LED" gate="G$1" pin="GREEN"/>
@@ -7379,7 +7475,7 @@ V 1.0</text>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U$1" gate="A" pin="RB3"/>
+<pinref part="U1" gate="A" pin="RB3"/>
 <wire x1="78.74" y1="63.5" x2="96.52" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="63.5" x2="96.52" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="LED" gate="G$1" pin="BLUE"/>
@@ -7406,33 +7502,46 @@ V 1.0</text>
 <wire x1="114.3" y1="12.065" x2="114.3" y2="15.875" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="A" pin="VDD"/>
-<wire x1="27.94" y1="76.2" x2="22.7584" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="22.7584" y1="76.2" x2="22.7584" y2="78.5368" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="117.475" y1="64.77" x2="118.745" y2="64.77" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
 <wire x1="118.745" y1="64.77" x2="118.745" y2="67.945" width="0.1524" layer="91"/>
 <junction x="118.745" y="64.77"/>
-<pinref part="J1" gate="G$1" pin="VCC"/>
-<wire x1="121.9708" y1="58.42" x2="118.745" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="121.9708" y1="58.42" x2="124.46" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="58.42" x2="118.745" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="118.745" y1="58.42" x2="118.745" y2="64.77" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="25.4" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="P+5" gate="VCC" pin="VCC"/>
+<wire x1="40.64" y1="25.4" x2="40.64" y2="30.2768" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="30.2768" x2="40.5384" y2="30.2768" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="VDD"/>
+<wire x1="27.94" y1="76.2" x2="22.86" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="P+1" gate="VCC" pin="VCC"/>
+<wire x1="22.86" y1="76.2" x2="22.86" y2="78.5368" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="78.5368" x2="22.7584" y2="78.5368" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BTN" class="0">
 <segment>
+<wire x1="114.3" y1="26.035" x2="114.3" y2="27.305" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="S1" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="29.845" x2="114.3" y2="26.035" width="0.1524" layer="91"/>
-<wire x1="112.395" y1="29.845" x2="114.3" y2="29.845" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="27.305" x2="114.3" y2="29.845" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="29.845" x2="114.3" y2="36.195" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="29.845" x2="114.3" y2="29.845" width="0.1524" layer="91"/>
 <junction x="114.3" y="29.845"/>
+<pinref part="S2" gate="1" pin="S"/>
+<pinref part="S2" gate="1" pin="S1"/>
+<wire x1="111.76" y1="27.305" x2="114.3" y2="27.305" width="0.1524" layer="91"/>
+<junction x="114.3" y="27.305"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="A" pin="RB4"/>
+<pinref part="U1" gate="A" pin="RB4"/>
 <wire x1="78.74" y1="60.96" x2="83.185" y2="60.96" width="0.1524" layer="91"/>
 <label x="83.3374" y="60.96" size="1.016" layer="95" xref="yes"/>
 </segment>
@@ -7442,7 +7551,7 @@ V 1.0</text>
 </net>
 <net name="BUZZER" class="0">
 <segment>
-<pinref part="U$1" gate="A" pin="RB5"/>
+<pinref part="U1" gate="A" pin="RB5"/>
 <wire x1="78.74" y1="58.42" x2="83.185" y2="58.42" width="0.1524" layer="91"/>
 <label x="90.805" y="58.42" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -7456,18 +7565,20 @@ V 1.0</text>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="PGD"/>
-<wire x1="121.9708" y1="53.34" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="A" pin="RB7"/>
+<wire x1="121.9708" y1="53.34" x2="124.46" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="RB7"/>
+<pinref part="J1" gate="G$1" pin="4"/>
+<wire x1="124.46" y1="53.34" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="U$1" gate="A" pin="RB6"/>
+<pinref part="U1" gate="A" pin="RB6"/>
 <wire x1="78.74" y1="55.88" x2="84.455" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="84.455" y1="55.88" x2="84.455" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="PGC"/>
-<wire x1="84.455" y1="50.8" x2="121.9708" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="84.455" y1="50.8" x2="124.46" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="5"/>
+<wire x1="124.46" y1="50.8" x2="121.9708" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -7481,6 +7592,13 @@ V 1.0</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,27.94,76.2,U$1,VDD,VCC,,,"/>
+<approved hash="105,1,13.335,51.7525,N$7,,,,,"/>
+<approved hash="115,1,114.008,60.96,MCLR,,,,,"/>
+<approved hash="115,1,126.365,30.48,BUZZER,,,,,"/>
+<approved hash="115,1,114.3,26.67,BTN,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
@@ -7502,6 +7620,11 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
+will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
