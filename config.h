@@ -16,7 +16,7 @@
 #define  true 1
 #define  false 0
 
-//define funÃ§Ã£o de looping infinito
+//define função de looping infinito
 #define loop() while(1)
 
 #include <xc.h>                 // include for XC8 compiler
@@ -24,4 +24,3 @@
 #define _XTAL_FREQ 4000000UL    // Crystal frequency
 
 #endif	/* CONFIG_H */
-
