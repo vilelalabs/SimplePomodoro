@@ -15,6 +15,10 @@ A simple pomodoro timer written in C with **PIC16F84A**
   tempo(Y);       //5 minutes
   restTime();
 ```
-## Schematic and PCB 
-![schematic](img/sch.png)
-- PCB comming soon...
+## Schematic, PCB  and 3D view
+
+Schematic                  |  Printed Circuit Board |   3D visualization             
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="img/sch.png" width="480">  |  <img src="img/PCB.PNG" width="480">   |   <img src="img/3D.PNG" width="480">      
+
+
